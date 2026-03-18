@@ -1,0 +1,21 @@
+#colorDiv {
+    background-color: pink;
+    font-style: bold;
+    font-size: xx-large;
+    font-weight: 800;
+    text-align: center;
+    align-items: center;
+}
+
+.my-container-1, .my-container-2 {
+    text-align: center;
+    align-items: center;
+}
+
+h3 {
+    color: #ff347f;
+}
+
+* {
+    font-size: large;
+}

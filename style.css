@@ -250,9 +250,6 @@ h6 {
     opacity: 0.6;
 }
 
-
-
-
 .lang-btn.inactive {
     color: #9ca3af;
     font-weight: 400;
@@ -260,4 +257,35 @@ h6 {
 
 .timeline-item:last-child {
     margin-bottom: 0;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.unicorn-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border: 1px solid #ddd;
+}
+
+.unicorn-btn:hover {
+    transform: scale(1.1);
+    background-color: #e0c3fc;
 }

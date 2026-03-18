@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Trivia!</title>
+</head>
+
+
+<body>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Part 1: Multiple Choice </h2>
+            <hr>
+            <h3>When was the last witch trial in the US?</h3>
+            <div aria-label="Multiple choice options" id="button-container">
+                <button id="btn-1">1917</button>
+                <button id="btn-2">1878</button>
+                <button id="btn-3">1754</button>
+                <button id="btn-4">2001</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <h3>To which continent is the Dragon's Blood tree endemic?</h3>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Type your answer here..."
+                    aria-label="Type your answer here..." id="text-box" autocomplete="off">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="submit-button">Check Answer</button>
+                </div>
+            </div>
+            <div id="secondQuestion" style="margin-top: 10px;"></div>
+        </div>
+    </div>
+
+
+
+    <script>
+        // FIRST QUESTION
+        var prevClickedButton = null;
+        var prevFeedback = null;
+
+        var container = document.getElementById("button-container");
+        container.addEventListener("click", function (event) {
+            var clickedButton = event.target;
+
+            // Make sure a btn is selected
+            if (clickedButton.tagName !== "BUTTON") {
+                return;
+            }
+
+
+            // Reset previous styling
+            if (prevClickedButton) {
+                prevClickedButton.style.backgroundColor = "#d9edff";
+                prevClickedButton.style.color = "black";
+            }
+            // Reset previous feedback
+            if (prevFeedback) {
+                prevFeedback.remove();
+                prevFeedback = null;
+            }
+
+
+            // Feedback
+            var feedbackT = document.createElement("p");
+            feedbackT.innerText = "Correct!";
+
+            var feedbackF = document.createElement("p");
+            feedbackF.innerText = "Incorrect.";
+
+            var buttonContainer = document.getElementById("button-container");
+
+
+            // Btn logic
+            if (clickedButton.id === "btn-2") {
+                clickedButton.style.backgroundColor = "green";
+                clickedButton.style.color = "white";
+
+                prevFeedback = buttonContainer.appendChild(feedbackT);
+
+            } else {
+                clickedButton.style.backgroundColor = "red";
+                clickedButton.style.color = "white";
+
+                prevFeedback = buttonContainer.appendChild(feedbackF);
+            }
+
+            prevClickedButton = clickedButton;
+        });
+
+
+
+        // SECOND QUESTION
+        var userInput = document.getElementById("text-box");
+        var submitButton = document.getElementById("submit-button");
+        var inputArea = document.getElementById("secondQuestion");
+
+        var currentFeedback = null;
+
+        submitButton.addEventListener("click", function (event) {
+
+            // Feedback logic
+            if (currentFeedback) {
+                currentFeedback.remove();
+                currentFeedback = null;
+            }
+            var newFeedback = document.createElement("p");
+
+            //Answer check
+            if (userInput.value.trim().toLowerCase() === "africa") {
+
+                userInput.style.backgroundColor = "green";
+                userInput.style.color = "white";
+
+                newFeedback.innerText = "Correct!";
+                inputArea.appendChild(newFeedback);
+                currentFeedback = newFeedback;
+
+            } else {
+                userInput.style.backgroundColor = "red";
+                userInput.style.color = "white";
+
+                newFeedback.innerText = "Incorrect.";
+                inputArea.appendChild(newFeedback);
+                currentFeedback = newFeedback;
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>

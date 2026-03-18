@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Outfit:wght@300;400;600;800&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    </link>
+
+    <title>HTTP Durum Kodları Rehberi</title>
+</head>
+
+
+<body class="pattern-bg text-slate-700">
+
+    <!--Header-->
+    <header class="bg-gradient-to-r from-slate-900 to-slate-800 text-white py-16 px-4 relative overflow-hidden">
+        <div class="absolute top-0 right-0 opacity-10 transform translate-x-10 -translate-y-10">
+            <i class="fa-solid fa-server text-9xl"></i>
+        </div>
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <div class="inline-block bg-white/10 backdrop-blur-md rounded-full px-4 py-1 mb-4 border border-white/20">
+                <span class="text-pink-300">💖 Web Geliştiricileri İçin Bir El Kitabı</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 tracking-tight">HTTP Durum Kodları</h1>
+            <p class="text-xl text-slate-300 max-w-2xl mx-auto font-light">
+                Tarayıcı ile sunucu arasındaki gizli konuşmaların ne anlama geldiğine bakalım.
+            </p>
+        </div>
+    </header>
+
+    <!--Nav/Legend-->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-slate-200 shadow-sm overflow-x-auto">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex space-x-2 md:justify-center min-w-max">
+            <a href="#1xx"
+                class="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-700 hover:bg-blue-200 transition">🔵
+                1xx: Bilgilendirme</a>
+            <a href="#2xx"
+                class="px-4 py-2 rounded-full text-sm font-semibold bg-emerald-100 text-emerald-700 hover:bg-emerald-200 transition">🟢
+                2xx: Başarılı İşlem</a>
+            <a href="#3xx"
+                class="px-4 py-2 rounded-full text-sm font-semibold bg-amber-100 text-amber-700 hover:bg-amber-200 transition">🟡
+                3xx: Yönlendirme</a>
+            <a href="#4xx"
+                class="px-4 py-2 rounded-full text-sm font-semibold bg-rose-100 text-rose-700 hover:bg-rose-200 transition">🔴
+                4xx: İstemci Hatası</a>
+            <a href="#5xx"
+                class="px-4 py-2 rounded-full text-sm font-semibold bg-purple-100 text-purple-700 hover:bg-purple-200 transition">🟣
+                5xx: Sunucu Hatası</a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-12 space-y-20">
+
+        <!--1XX-->
+        <section id="1xx" class="scroll-mt-28">
+            <div class="flex items-center mb-8 gap-4">
+                <div
+                    class="w-16 h-16 rounded-2xl bg-blue-500 flex items-center justify-center text-white text-3xl shadow-lg shadow-blue-200">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-800">1xx: Bilgilendirme</h2>
+                    <p class="text-slate-500">"Mesaj alındı, işlem devam ediyor. Lütfen bekleyin..."</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!--100-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-blue-400 shadow-sm hover:shadow-md">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-blue-500">100</span>
+                        <i class="fa-solid fa-hourglass-start text-blue-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Continue</h3>
+                    <p class="text-sm text-slate-600">Her şey yolunda, isteğin geri kalanını göndermeye devam
+                        edebilirsiniz.</p>
+                </div>
+
+                <!--101-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-blue-400 shadow-sm hover:shadow-md">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-blue-500">101</span>
+                        <i class="fa-solid fa-right-left text-blue-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Switching Protocols</h3>
+                    <p class="text-sm text-slate-600">Sunucu protokol değiştiriyor (ör. HTTP'den WebSocket'a geçiş yapılıyor).</p>
+                </div>
+            </div>
+        </section>
+
+        <!--2XX-->
+        <section id="2xx" class="scroll-mt-28">
+            <div class="flex items-center mb-8 gap-4">
+                <div
+                    class="w-16 h-16 rounded-2xl bg-emerald-500 flex items-center justify-center text-white text-3xl shadow-lg shadow-emerald-200">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-800">2xx: Başarılı İşlem</h2>
+                    <p class="text-slate-500">"Harika! İstek başarıyla alındı, anlaşıldı ve kabul edildi."</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 200 -->
+                <div
+                    class="code-card bg-emerald-50 p-6 rounded-2xl border border-emerald-100 shadow-sm relative overflow-hidden group">
+                    <div
+                        class="absolute -right-4 -top-4 bg-emerald-100 w-24 h-24 rounded-full opacity-50 group-hover:scale-150 transition-transform">
+                    </div>
+                    <div class="flex justify-between items-start mb-3 relative z-10">
+                        <span class="code-number text-5xl font-bold text-emerald-600">200</span>
+                        <i class="fa-solid fa-thumbs-up text-emerald-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-emerald-900 relative z-10">OK</h3>
+                    <p class="text-sm text-emerald-800 relative z-10">Standart "Başarılı" yanıtıdır. Web sayfasını
+                        görüyorsanız
+                        muhtemelen bu kod çalışmıştır.</p>
+                </div>
+
+                <!--201-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-emerald-400 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-emerald-500">201</span>
+                        <i class="fa-solid fa-plus-circle text-emerald-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Created</h3>
+                    <p class="text-sm text-slate-600">İstek başarılı oldu ve yeni bir kaynak oluşturuldu (ör. kayıt
+                        formu sonrasında).</p>
+                </div>
+
+                <!--204-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-emerald-400 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-emerald-500">204</span>
+                        <i class="fa-solid fa-file-circle-xmark text-emerald-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">No Content</h3>
+                    <p class="text-sm text-slate-600">İşlem başarılı ama geri döndürülecek bir içerik yok. Sadece
+                        "Tamam" denmiş oldu.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--3XX-->
+        <section id="3xx" class="scroll-mt-28">
+            <div class="flex items-center mb-8 gap-4">
+                <div
+                    class="w-16 h-16 rounded-2xl bg-amber-500 flex items-center justify-center text-white text-3xl shadow-lg shadow-amber-200">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-800">3xx: Yönlendirme</h2>
+                    <p class="text-slate-500">"Aradığınız içerik burada değil, <em>{adres}</em> adresine taşındı."</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!--301-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-amber-400 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-amber-500">301</span>
+                        <i class="fa-solid fa-truck-moving text-amber-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Moved Permanently</h3>
+                    <p class="text-sm text-slate-600">Kalıcı olarak taşındı. Adres defterini güncelleyin çünkü artık yeni
+                        adres burası.</p>
+                </div>
+
+                <!--302-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-amber-400 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-amber-500">302</span>
+                        <i class="fa-solid fa-person-walking-luggage text-amber-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Found (Temporary)</h3>
+                    <p class="text-sm text-slate-600">Geçici olarak başka yerde. Şimdilik oraya gidin ama asıl adresi
+                        unutmayın.</p>
+                </div>
+
+                <!--304-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-amber-400 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-amber-500">304</span>
+                        <i class="fa-solid fa-recycle text-amber-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Not Modified</h3>
+                    <p class="text-sm text-slate-600">Sayfa değiştirilmedi. Ön belleğinizdeki <em>(cache)</em> versiyonu
+                        kullanabilirsiniz.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--4XX-->
+        <section id="4xx" class="scroll-mt-28">
+            <div class="flex items-center mb-8 gap-4">
+                <div
+                    class="w-16 h-16 rounded-2xl bg-rose-500 flex items-center justify-center text-white text-3xl shadow-lg shadow-rose-200">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-800">4xx: İstemci Hatası</h2>
+                    <p class="text-slate-500">"Sorun bizde değil sizde! (Tarayıcı veya kullanıcı hatası)"</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!--400-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-rose-400 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-rose-500">400</span>
+                        <i class="fa-solid fa-spell-check text-rose-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Bad Request</h3>
+                    <p class="text-sm text-slate-600">Sunucu, ne dediğinizi anlamadı. İstek hatalı veya eksik.</p>
+                </div>
+
+                <!--401-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-rose-400 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-rose-500">401</span>
+                        <i class="fa-solid fa-id-card text-rose-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Unauthorized</h3>
+                    <p class="text-sm text-slate-600">Kimsiniz? Giriş yapmanız gerekiyor (kimlik doğrulama yapılmamış).
+                    </p>
+                </div>
+
+                <!--403-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-rose-400 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-rose-500">403</span>
+                        <i class="fa-solid fa-ban text-rose-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Forbidden</h3>
+                    <p class="text-sm text-slate-600">Kim olduğunuzu biliyoruz ama buraya giremezsiniz. Yetkiniz yok.
+                    </p>
+                </div>
+
+                <!--404 - highlight-->
+                <div
+                    class="code-card bg-rose-50 p-6 rounded-2xl border border-rose-100 shadow-md relative overflow-hidden group md:col-span-2 lg:col-span-2">
+                    <div class="absolute -right-10 -bottom-10 bg-rose-100 w-40 h-40 rounded-full opacity-50"></div>
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 relative z-10">
+                        <div>
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="code-number text-5xl font-bold text-rose-600">404</span>
+                                <span
+                                    class="bg-rose-200 text-rose-800 text-xs px-2 py-1 rounded-lg uppercase font-bold tracking-wide">En
+                                    Popüleri</span>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-2 text-rose-900">Not Found</h3>
+                            <p class="text-rose-800">Aradığınız sayfa yok. Silinmiş, taşınmış veya bağlantısı yanlış
+                                yazılmış.</p>
+                        </div>
+                        <div class="text-6xl text-rose-300">
+                            <i class="fa-solid fa-ghost"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--418 - Easter egg-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-pink-400 shadow-sm bg-pink-50/50">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-pink-500">418</span>
+                        <i class="fa-solid fa-mug-hot text-pink-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">I'm a teapot</h3>
+                    <p class="text-sm text-slate-600">"Ben bir çaydanlığım!" 1998'de 1 Nisan şakası olarak çıktı ama
+                        hâlâ standartlarda var. 🥰</p>
+                </div>
+
+                <!--429-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-rose-400 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-rose-500">429</span>
+                        <i class="fa-solid fa-hand text-rose-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Too Many Requests</h3>
+                    <p class="text-sm text-slate-600">Sakin! Çok fazla istek gönderdiniz. Biraz bekleyin.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--5XX-->
+        <section id="5xx" class="scroll-mt-28">
+            <div class="flex items-center mb-8 gap-4">
+                <div
+                    class="w-16 h-16 rounded-2xl bg-violet-600 flex items-center justify-center text-white text-3xl shadow-lg shadow-violet-200">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-800">5xx: Sunucu Hatası</h2>
+                    <p class="text-slate-500">"Sorun bizde! Sunucu tarafında işler biraz karıştı."</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!--500-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-violet-400 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-violet-500">500</span>
+                        <i class="fa-solid fa-bomb text-violet-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Internal Server Error</h3>
+                    <p class="text-sm text-slate-600">Genel sunucu hatası. Sunucu bir sorunla karşılaştı ama tam olarak
+                        ne olduğunu size söyleyemiyor.</p>
+                </div>
+
+                <!--502-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-violet-400 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-violet-500">502</span>
+                        <i class="fa-solid fa-network-wired text-violet-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Bad Gateway</h3>
+                    <p class="text-sm text-slate-600">Bir sunucu, diğer sunucudan geçersiz bir yanıt aldı. Arada bir iletişim
+                        kopukluğu yaşandı.</p>
+                </div>
+
+                <!--503-->
+                <div
+                    class="code-card bg-violet-50 p-6 rounded-2xl border border-violet-100 shadow-sm relative overflow-hidden group">
+                    <div
+                        class="absolute -right-4 -top-4 bg-violet-100 w-20 h-20 rounded-full opacity-50 group-hover:scale-150 transition-transform">
+                    </div>
+                    <div class="flex justify-between items-start mb-3 relative z-10">
+                        <span class="code-number text-4xl font-bold text-violet-600">503</span>
+                        <i class="fa-solid fa-screwdriver-wrench text-violet-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-violet-900 relative z-10">Service Unavailable</h3>
+                    <p class="text-sm text-violet-800 relative z-10">Sunucu şu anda meşgul veya bakımda. Daha sonra
+                        tekrar
+                        deneyin.</p>
+                </div>
+
+                <!--504-->
+                <div class="code-card glass-card p-6 rounded-2xl border-l-4 border-violet-400 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="code-number text-4xl font-bold text-violet-500">504</span>
+                        <i class="fa-solid fa-stopwatch text-violet-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Gateway Timeout</h3>
+                    <p class="text-sm text-slate-600">Sunucu, diğer sunucudan zamanında cevap alamadı. Süre doldu!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!--Footer-->
+    <footer class="bg-slate-900 text-slate-400 py-12 mt-12 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h3 class="text-2xl font-bold text-white mb-4 font-fredoka">Unutmayın!</h3>
+            <p class="mb-8 max-w-lg mx-auto">
+                Hatalar, geliştirme sürecinin bir parçasıdır. <span class="text-rose-400">4xx</span> ve <span
+                    class="text-violet-400">5xx</span> kodları can sıksa da bunlar, size sorunun nerede olduğunu
+                gösteren yardımcı bilgi parçacıklarıdır.
+            </p>
+            <div class="flex justify-center space-x-4 text-2xl">
+                <i class="fa-solid fa-code text-blue-500"></i>
+                <i class="fa-solid fa-heart text-pink-500"></i>
+                <i class="fa-solid fa-laptop-code text-emerald-500"></i>
+            </div>
+            <p class="mt-8 text-sm opacity-50">Sevgiler! 💗</p>
+            <p class="mt-8 text-sm opacity-50">Architected by zaruyashar.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

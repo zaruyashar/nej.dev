@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zaruyashar | Mini Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="/" class="home-btn" title="NEJ.DEV">🏠</a>
+
+    <section class="hero">
+        <div class="title-container">
+            <h1>nej.dev learnLAB</h1>
+        </div>
+
+        <div class="unicorn-wrapper">
+            <div class="unicorn-head">
+
+                <div class="horn"></div>
+
+                <div class="ears">
+                    <div class="ear left"></div>
+                    <div class="ear right"></div>
+                </div>
+
+                <div class="mane">
+                    <div class="mane-part mane-1"></div>
+                    <div class="mane-part mane-2"></div>
+                    <div class="mane-part mane-3"></div>
+                </div>
+
+                <div class="eyes-row">
+                    <div class="eye">
+                        <div class="pupil-container">
+                            <div class="iris">
+                                <div class="shine-1"></div>
+                                <div class="shine-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eye">
+                        <div class="pupil-container">
+                            <div class="iris">
+                                <div class="shine-1"></div>
+                                <div class="shine-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cheeks">
+                    <div class="cheek"></div>
+                    <div class="cheek"></div>
+                </div>
+
+                <div class="face-features">
+                    <div class="nose-dots">
+                        <div class="nose-dot"></div>
+                        <div class="nose-dot"></div>
+                    </div>
+                    <div class="mouth"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="clouds-desk-container">
+        <div class="cloud-base"></div>
+        <div class="extra-cloud-left"></div>
+        <div class="extra-cloud-right"></div>
+    </div>
+    <div class="desk-separator"></div>
+
+    <!--- PROJECT CARDS --->
+    <section class="content-section">
+        <div class="projects-grid">
+
+            <div class="card" onclick="openProject('./projects/http-status-codes/index.html')">
+                <h3 class="card-title">PROJECT: HTTP Status Codes</h3>
+                <p class="card-desc">An info page [tr-TR] on the categorization and content of HTTP status codes.</p>
+                <div class="tech-tooltip">Tech: HTML, CSS, JavaScript</div>
+            </div>
+
+            <div class="card" onclick="openProject('./projects/dom-manipulation/index.html')">
+                <h3 class="card-title">PROJECT: DOM Manipulation</h3>
+                <p class="card-desc">I learned 4 ways of manipulating
+                    content on the screen.</p>
+                <div class="tech-tooltip">Tech: JQuery, event handlers, JavaScript</div>
+            </div>
+
+            <div class="card" onclick="openProject('./projects/trivia/index.html')">
+                <h3 class="card-title">PROJECT: Trivia</h3>
+                <p class="card-desc">A simple web page containing 2 trivia questions.</p>
+                <div class="tech-tooltip">Tech: JavaScript, Bootstrap 4</div>
+            </div>
+
+            <div class="card coming-soon">
+                <div class="status-icon">🚧</div>
+                <h3 class="card-title">More Loading...</h3>
+                <p class="card-desc">New projects baking in the code lab.</p>
+                <div class="tech-tooltip">Status: Coding in progress...</div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!--- Static app iFrame screens --->
+    <div id="game-overlay" class="overlay">
+        <!--- No going back to the prev. page in iFrame, so, pop-out option --->
+        <div class="game-console">
+            <div class="console-controls">
+                <button class="popout-btn" onclick="openInNewTab()" title="Open in New Tab">↗</button>
+                <button class="close-btn" onclick="closeProject()" title="Close">X</button>
+            </div>
+
+            <iframe id="project-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+
+
+
+    <!--- Always add script files before the closing "body" tag --->
+    <script src="script.js"></script>
+</body>
+
+</html>
