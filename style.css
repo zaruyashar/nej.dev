@@ -42,7 +42,6 @@ h6 {
     font-size: clamp(1rem, 1.5vw, 1.25rem) !important;
 }
 
-
 .font-mono {
     font-family: var(--font-mono);
 }
@@ -54,7 +53,6 @@ h6 {
 .text-secondary-custom {
     color: var(--text-secondary);
 }
-
 
 .blur-nav {
     background: rgba(255, 255, 255, 0.9);
@@ -77,7 +75,6 @@ h6 {
     max-width: 600px;
 }
 
-
 .btn-custom-primary,
 .btn-custom-dark {
     padding: 12px 24px;
@@ -85,7 +82,6 @@ h6 {
     transition: all 0.3s ease;
     border: 1px solid;
 }
-
 
 .btn-custom-primary {
     border-color: var(--accent-color);
@@ -98,7 +94,6 @@ h6 {
     color: var(--accent-color);
 }
 
-
 .btn-custom-dark {
     border-color: var(--text-primary);
     color: var(--text-primary);
@@ -109,7 +104,6 @@ h6 {
     background-color: var(--text-primary);
     color: #ffffff;
 }
-
 
 /* cards & sections */
 .bg-light-custom {
@@ -186,7 +180,6 @@ h6 {
 
 
 /* Feature update: Language switcher & en-US localization in addition to tr-TR */
-/* --- Language Switcher: Soft Pill Style --- */
 .lang-switch {
     background-color: transparent;
     padding: 0;
@@ -195,33 +188,24 @@ h6 {
 
 .lang-btn {
     padding: 4px 10px;
-    /* Kutucuk boyutu */
     border-radius: 6px;
-    /* Köşeleri yuvarla */
     transition: all 0.3s ease;
     text-decoration: none;
     font-weight: 500;
     color: var(--text-secondary);
-    /* Pasif renk */
 }
 
-/* Mouse ile üzerine gelince */
 .lang-btn:hover {
     color: var(--accent-color) !important;
     background-color: rgba(37, 99, 235, 0.05);
-    /* Çok hafif mavi */
 }
 
-/* Aktif Dilin Görünümü */
 .lang-btn.active {
     background-color: rgba(37, 99, 235, 0.1);
-    /* Hafif Mavi Arkaplan */
     color: var(--accent-color) !important;
-    /* Mavi Yazı */
     font-weight: 700;
 }
 
-/* Pasif Dilin Görünümü */
 .lang-btn.inactive {
     opacity: 0.6;
 }
@@ -267,25 +251,20 @@ h6 {
 }
 
 
+/* mobile QA updates */
 
-
-/* --- MOBİL GÜNCELLEMELERİ v2 (Defensive Architecture) --- */
-
-/* 1. Yatay Taşmayı (Horizontal Scroll) Kesin Olarak Engelle */
 html,
 body {
     overflow-x: hidden;
     width: 100%;
 }
 
-/* Uzun kelimelerin mobil ekranı sağa doğru patlatmasını engelle */
 h1,
 .display-1 {
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
-/* 2. Hamburger İkonunu Küçültmek ve Sabitlemek */
 .navbar-toggler {
     padding: 0.25rem 0.5rem;
     font-size: 1.25rem;
@@ -298,7 +277,7 @@ h1,
     background-size: 100% 100%;
 }
 
-/* FİLİGRAN KONUMLANDIRMASI (Hem Masaüstü Hem Mobil İçin) */
+/* watermark */
 .hero-bg-code {
     position: absolute;
     top: 5px;
@@ -311,7 +290,6 @@ h1,
     font-size: 0.85rem;
 }
 
-/* Mobil Cihazlar İçin Filigran İnce Ayarı */
 @media (max-width: 991.98px) {
     .hero-bg-code {
         opacity: 0.3;
@@ -319,7 +297,7 @@ h1,
     }
 }
 
-/* HEADER (HERO) YÜKSEKLİK VE BOŞLUK AYARLARI */
+/* hero header */
 .hero-section {
     min-height: 100vh;
     padding-top: 140px !important;
