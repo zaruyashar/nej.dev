@@ -3,58 +3,57 @@
         "about": "01. About",
         "stack": "02. Stack",
         "projects": "03. Projects",
-        "experience": "04. Career",
+        "experience": "04. Experience",
         "contact": "05. Contact"
     },
     "hero": {
         "greeting": "Hello, I'm Nejla Nur Yasar.",
         "title_main": "Languages? Mastered.",
         "title_sub": "Now Engineering the Logic.",
-        "description": "Former <span class='text-highlight'>Technical Localization Specialist</span> (Apple, Netflix, AWS). <br> Aspiring <span class='text-highlight'>Software Developer & DevOps Engineer</span>. <br> After 5+ years of localizing interfaces for global tech giants, I am now transitioning to the source to optimize the very code I once translated.",
+        "description": "I leverage over five years of Quality Assurance (QA) experience with global tech giants like AWS, Netflix, and Apple, combining this expertise with Lean Six Sigma methodologies. <br> I now architect secure, fault-tolerant, and production-ready backend systems within the <span class='text-highlight'>.NET ecosystem</span>.",
         "btn_projects": "View Projects",
         "btn_contact": "Get in Touch"
     },
     "about": {
         "title": "Engineering Perspective",
-        "p1": "My education at Boğaziçi University and my technical translation career taught me a vital lesson: <strong>Integrity of the whole depends on details often overlooked.</strong>",
-        "p2": "While serving as a \"Lead Reviewer\" for industry giants like Netflix and Apple, I audited and refined not just words, but UI string errors, contextual discrepancies, and User Experience (UX). This process sparked my interest in the \"mechanics of software\" and data flow, rather than just the surface-level interface.",
-        "p3": "I am currently bridging this analytical background with coding proficiency through <strong>Harvard CS50</strong> and advanced bootcamps. To formalize my expertise with a degree, I am also pursuing Management Information Systems at Istanbul University.",
-        "p4": "My Goal: To become a well-equipped developer with the vision of a <em>Software Architect</em>, driven by lifelong learning.",
-        "focus_title": "Focus Areas",
-        "focus_backend": "<strong>Backend Logic:</strong> Learning to build robust algorithms using C and Python.",
-        "focus_devops": "<strong>DevOps & Cloud:</strong> Acquiring cross-functional knowledge in CI/CD, Linux, and Automation culture.",
-        "focus_quality": "<strong>Quality Code:</strong> Driven by a passion for efficiency and sustainability, I adhere to Clean Code principles and Lean Six Sigma methodologies."
+        "p1": "My experience in localization and quality assurance for flagship products of prestigious brands has consistently reinforced a critical lesson: <strong>A single bug or process vulnerability can impact millions of users and severely damage brand reputation.</strong>",
+        "p2": "Today, I apply that same meticulous precision and discipline to writing clean, maintainable, and secure code. I do not merely write syntax; I engineer robust systems that prioritize scalability and reliability.",
+        "p3": "I consolidate my computer science and software engineering foundations through rigorous programs such as Harvard CS50, a B.A. in Management Information Systems at Istanbul University, and premium certified training, enabling me to architect enterprise-grade solutions using C# and .NET Core.",
+        "p4": "My Goal: To integrate my multidimensional perspective on quality, security, and architecture into a forward-thinking engineering team.",
+        "focus_title": "Architectural Focus",
+        "focus_backend": "<strong>Backend & Architecture:</strong> Designing scalable systems using N-Tier architecture, RESTful APIs, and SOLID principles with C# and .NET Core.",
+        "focus_security": "<strong>Data & Security:</strong> Ensuring data integrity with MSSQL, PostgreSQL, and Entity Framework Core; proactively mitigating CSRF/XSS vulnerabilities through OWASP Secure Coding principles.",
+        "focus_quality": "<strong>Process & Quality:</strong> As a Lean Six Sigma Yellow Belt certified developer, I execute process-driven development aimed at reducing technical debt and achieving operational excellence."
     },
     "stack": {
         "title": "Tech Stack",
-        "cat_backend": "Core & Backend",
-        "cat_web": "Web Technologıes",
-        "cat_devops": "DevOps & Tools",
-        "cat_cloud": "Cloud & AI Servıces",
+        "cat_1": "Frameworks & Architecture",
+        "cat_2": "Databases & ORM",
+        "cat_3": "Security & APIs",
+        "cat_4": "DevOps & QA",
         "loading_title": "Compiling...",
-        "loading_desc": "Now loading:"
+        "loading_desc": "Current focus:"
     },
     "projects": {
         "title": "Projects",
-        "nejdev_desc": "Built using Vanilla JS and Clean Code principles, eliminating framework dependencies. Leverages <strong>Cloudflare</strong> infrastructure for DNS management and performance optimization.",
-        "readability_desc": "A text complexity analysis algorithm developed for Harvard's CS50. Utilizes the Coleman-Liau index to evaluate reading levels.",
-        "gainsmax_desc": "A performance-driven, static web application performing client-side fitness calculations (body fat, RDI etc.)"
+        "p1_title": "Türk Tarım Enterprise CMS",
+        "p1_desc": "An enterprise-grade Content Management System developed in an N-Tier architecture using C# and .NET Core, featuring Role-Based Access Control (RBAC) and secure file management. It is protected against CSRF, XSS, and other vulnerabilities through strict defensive programming practices."
     },
     "experience": {
         "title": "Professional Foundation",
-        "job1_date": "2019 - 2023",
-        "job1_title": "Lead Reviewer & Linguist (Netflix & Apple)",
-        "job1_location": "Istanbul",
-        "job1_list": "<li>Spearheaded Netflix Studio's transition into a highest-volume client account.</li><li>Authored the \"<em>Netflix Studio Localization Turkish Style Guide</em>\" from the ground up.</li><li>Oversaw UI string testing, context analysis, and QA processes for Apple, Google, and Netflix.</li>",
-        "job2_date": "2023 - Present",
-        "job2_title": "Freelance Tech Translator & Dev Candidate",
-        "job2_location": "Amazon, Kaspersky, Meta, VMware",
-        "job2_list": "<li>Translated technical documentation for Amazon Web Services (AWS).</li><li>Localized cybersecurity content for Kaspersky.</li><li>Actively engaging in software development training and building personal projects.</li>"
+        "job1_date": "August 2025 - Present",
+        "job1_title": "Software Engineer (Backend / Full Stack)",
+        "job1_location": "Portfolio Development",
+        "job1_list": "<li>Architecting and designing secure, scalable backend solutions (RESTful APIs, Microservices) within the .NET ecosystem.</li><li>Developing enterprise data access layers utilizing N-Tier architecture and Entity Framework Core.</li><li>Integrating vulnerability mitigation and security practices aligned with OWASP standards.</li>",
+        "job2_date": "August 2019 - November 2025",
+        "job2_title": "QA Specialist & Technical Linguist",
+        "job2_location": "Netflix, Apple, AWS, Kaspersky",
+        "job2_list": "<li>Managed In-Context Review (ICR) and Quality Assurance (QA) processes for Netflix and Apple software interfaces.</li><li>Ensured technical terminology consistency for cloud architecture and cybersecurity software, primarily for Amazon Web Services (AWS).</li><li>Authored the \"<i>Netflix Studio Localization Style Guide</i>\" and implemented process optimizations (Lean Six Sigma).</li>"
     },
     "contact": {
         "title": "What's Next?",
         "main_heading": "Let's Build Together",
-        "text": "I am currently open to DevOps, Backend, or Full Stack internship and junior roles. I believe the best way to learn is by doing. I am ready to bring value to your team with my multilingual proficiency (Tr, En, Jp, Ru), technical foundation, and \"lifelong learner\" mindset. Also, I thrive on feedback!",
+        "text": "I am currently open to Backend, .NET Developer, and Full Stack positions, with a particular interest in the Fintech and E-commerce sectors. I am ready to contribute my multidimensional perspective on quality, security, and architecture to your team.",
         "btn_email": "Send an Email"
     },
     "footer": {

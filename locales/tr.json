@@ -10,51 +10,50 @@
         "greeting": "Merhaba, ben Nejla Nur Yaşar.",
         "title_main": "Diller Tamam.",
         "title_sub": "Artık Mantığı Geliştiriyorum.",
-        "description": "Eski <span class='text-highlight'>Teknik Metin Yerelleştirme Uzmanı</span> (Apple, Netflix, AWS). <br> Yeni <span class='text-highlight'>Yazılım Geliştirici & DevOps Adayı</span>. <br> Prestijli markaların büyük ölçekli uygulamalarına ait arayüzleri yerelleştirmeyle geçen +5 yılın ardından şimdi de onları optimize etmek için işin mutfağına geçiş yapıyorum.",
+        "description": "AWS, Netflix ve Apple gibi küresel teknoloji devleriyle olan 5 yılı aşkın için Kalite Güvencesi (QA) geçmişimi Lean Six Sigma disipliniyle birleştiriyorum. <br> Şimdi <span class='text-highlight'>.NET ekosisteminde</span> güvenli, hata toleranslı ve yayınlanmaya hazır (<i>production-ready</i>) backend mimarileri geliştiriyorum.",
         "btn_projects": "Projeleri İncele",
         "btn_contact": "İletişime Geç"
     },
     "about": {
         "title": "Mühendis Bakış Açısı",
-        "p1": "Boğaziçi Üniversitesinde aldığım eğitim ve teknik çeviri kariyerim bana şunu öğretti: <strong>Bütünün kalitesini belirleyen, önemi çoğunlukla göz ardı edilebilen detaylardır.</strong>",
-        "p2": "Netflix ve Apple gibi sektör devlerin ürünlerinde \"Lead Reviewer\" olarak çalışırken sadece kelimeleri değil UI string hatalarını, bağlam kopukluklarını ve kullanıcı deneyimini (UX) denetleyip iyileştirme fırsatı buldum. Bu süreçteyse yazılımın \"nasıl göründüğünden\" çok \"nasıl çalıştığına\" ve veri akışına ilgi duymaya başladım.",
-        "p3": "Şu anda <strong>Harvard CS50</strong> ve ileri seviye bootcamp'ler ile bu analitik yetkinliğimi kodlama becerisiyle birleştiriyorum. Çabalarımı bir lisans derecesiyle taçlandırmak adına da İstanbul Üniversitesinde Yönetim Bilişim Sistemleri okuyorum.",
-        "p4": "Hedefim: <em>Software Architect</em> vizyonuna sahip, donanımlı ve her daim öğrenmeye devam eden bir geliştirici olmak.",
-        "focus_title": "Odak Alanlarım",
-        "focus_backend": "<strong>Backend Mantığı:</strong> C ve Python ile güçlü algoritmalar yazmayı öğreniyorum.",
-        "focus_devops": "<strong>DevOps & Bulut:</strong> CI/CD, Linux ve Otomasyon kültürü hakkında yatay bilgi birikimi oluşturmaya çalışıyorum.",
-        "focus_quality": "<strong>Kaliteli Kod:</strong> Verimlilik ve sürdürülebilirlik tutkum neticesinde, Clean Code prensipleri ile Lean Six Sigma ilkelerinin ışığında yürümek istiyorum."
+        "p1": "Prestijli markaların ürünlerinde edindiğim yerelleştirme ve kalite süreçleri deneyimi bana defalarca kez şunu çok net gösterdi: <strong>Tek bir hata veya süreç zafiyeti hem milyonlarca kullanıcıyı etkileyebilir hem de bir markanın itibarını yerle bir edebilir</strong>.",
+        "p2": "Bugün aynı ince işçilik ve disiplini temiz, sürdürülebilir ve güvenli kod yazmaya uyguluyorum. Sadece sentaks yazmıyor; ölçeklenebilirliğe ve güvenilirliğe öncelik veren sağlam sistemler inşa ediyorum.",
+        "p3": "Bilgisayar ve yazılım mühendisliği temellerimi Harvard CS50 ve İstanbul Üniversitesi Yönetim Bilişim Sistemleri Lisans gibi programların yanı sıra sertifikalı ve kaliteli eğitimlerle de destekliyor, C# ve .NET Core kullanarak kurumsal düzeyde çözümler tasarlıyorum.",
+        "p4": "Hedefim: Kalite, güvenlik ve mimariye olan çok boyutlu bakış açımı yenilikçi bir mühendislik ekibine katmak.",
+        "focus_title": "Mimari Odak",
+        "focus_backend": "<strong>Backend & Mimari:</strong> C# ve .NET Core kullanarak N-Katmanlı mimari, RESTful API'ler ve SOLID prensipleriyle ölçeklenebilir sistemler tasarlıyorum.",
+        "focus_security": "<strong>Veri & Güvenlik:</strong> MSSQL, PostgreSQL ve Entity Framework Core ile veri bütünlüğünü sağlıyor; OWASP Güvenli Kodlama prensipleriyle CSRF/XSS zafiyetlerini proaktif olarak engelliyorum.",
+        "focus_quality": "<strong>Süreç & Kalite:</strong> Lean Six Sigma Yellow Belt sertifikalı bir geliştirici olarak, teknik borcu azaltan ve operasyonel mükemmelliği hedefleyen süreç odaklı geliştirmeler yapıyorum."
     },
     "stack": {
         "title": "Teknoloji Envanteri",
-        "cat_backend": "Core & Backend",
-        "cat_web": "Web Teknolojileri",
-        "cat_devops": "DevOps & Araçlar",
-        "cat_cloud": "Cloud & AI Servisleri",
+        "cat_1": "Framework & Mimari",
+        "cat_2": "Veritabanı & ORM",
+        "cat_3": "Güvenlik & API",
+        "cat_4": "DevOps & QA",
         "loading_title": "Compiling...",
-        "loading_desc": "Şu anda aktif olarak yüklenenler:"
+        "loading_desc": "Güncel odak alanım:"
     },
     "projects": {
         "title": "Projeler",
-        "nejdev_desc": "Framework bağımlılığı olmadan Vanilla JS ve Clean Code prensipleriyle geliştirildi. Deployment sürecinde <strong>Cloudflare</strong> altyapısı kullanılarak DNS yönetimi ve performans optimizasyonu sağlandı.",
-        "readability_desc": "Metinlerin okuma seviyesini analiz eden, Harvard CS50 kapsamında geliştirilmiş bir algoritma. Coleman-Liau indeksini kullanarak analiz eder.",
-        "gainsmax_desc": "Fitness hesaplamalarını (yağ oranı, kalori vb.) istemci taraflı (client-side) olarak yapan, performans odaklı bir statik web uygulaması."
+        "p1_title": "Türk Tarım Enterprise CMS",
+        "p1_desc": "C# ve .NET Core kullanılarak N-Katmanlı mimaride geliştirilmiş; rol tabanlı erişim kontrolü (RBAC) ve güvenli dosya yönetimi sunan kurumsal bir içerik yönetim sistemidir. CSRF, XSS ve diğer güvenlik açıklarına karşı savunmacı programlama uygulamalarıyla korunmaktadır."
     },
     "experience": {
         "title": "Profesyonel Temel",
-        "job1_date": "2019 - 2023",
-        "job1_title": "Lead Reviewer & Linguist (Netflix & Apple)",
-        "job1_location": "İstanbul",
-        "job1_list": "<li>Netflix Studio'nun en yüksek hacimli müşteriye dönüşmesi sürecini yönettim.</li><li>\"<em>Netflix Studio Localization Turkish Style Guide</em>\"ı sıfırdan oluşturdum.</li><li>Apple, Google ve Netflix için UI string testleri, bağlam analizi ve kalite güvencesi (QA) süreçlerini yönettim.</li>",
-        "job2_date": "2023 - Günümüz",
-        "job2_title": "Freelance Tech Translator & Dev Candidate",
-        "job2_location": "Amazon, Kaspersky, Meta, VMware",
-        "job2_list": "<li>Amazon Web Services (AWS) teknik dokümanlarını çevirdim.</li><li>Kaspersky siber güvenlik metinlerini yerelleştirdim.</li><li>Yazılım geliştirme eğitimlerine katılıp kişisel projeler geliştirdim.</li>"
+        "job1_date": "Ağustos 2025 - Günümüz",
+        "job1_title": "Yazılım Mühendisi (Backend / Full Stack)",
+        "job1_location": "Portföy Geliştirme",
+        "job1_list": "<li>.NET ekosisteminde güvenli ve ölçeklenebilir backend çözümleri (RESTful API, Microservices); mimari ve tasarım.</li><li>N-Katmanlı mimari ve Entity Framework Core ile kurumsal veri erişim katmanları geliştirme.</li><li>OWASP standartlarında zafiyet koruması entegrasyonu ve güvenlik uygulamaları.</li>",
+        "job2_date": "Ağustos 2019 - Kasım 2025",
+        "job2_title": "QA Specialist & Technical Linguist",
+        "job2_location": "Netflix, Apple, AWS, Kaspersky",
+        "job2_list": "<li>Netflix ve Apple yazılım arayüzleri için In-Context Review (ICR) ve Kalite Güvence (QA) süreçlerinin yönetimi.</li><li>Amazon Web Services (AWS) başta olmak üzere bulut mimarisi ve siber güvenlik yazılımları için teknik terim bütünlüğünün sağlanması.</li><li>\"<i>Netflix Studio Localization Style Guide</i>\"ın oluşturulması ve süreç iyileştirmeleri (Six Sigma).</li>"
     },
     "contact": {
         "title": "Sırada Ne Var?",
         "main_heading": "Birlikte Geliştirelim",
-        "text": "Şu anda DevOps / Backend / Full Stack odaklı staj ve junior pozisyonlarına açığım. Kendimi geliştirmeye devam ediyorum. Bir işi yapmayı öğrenmenin en iyi yolu ise o işi yapmaktır, bunu biliyorum. Çok dilli (Tr, En, Jp, Ru) yetkinliğim, teknik altyapım ve \"yaşam boyu öğrenme\" felsefemle ekibinize değer katmaya hazırım. Ayrıca, geri bildirimlere bayılırım!",
+        "text": "Şu anda Backend, .NET Geliştirici ve Full Stack pozisyonlarına açığım. Özellikle Fintech ve E-commerce alanlarıyla ilgileniyorum. Takımınıza kalite, güvenlik ve mimari konusundaki çok boyutlu bakış açımı katmaya hazırım.",
         "btn_email": "E-posta Gönder"
     },
     "footer": {
