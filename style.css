@@ -2,7 +2,6 @@
 /* add color, sppacing, radius & transition here */
 :root {
     --bg-color: #ffffff;
-    /* custom properties */
     --text-primary: #111827;
     --text-secondary: #374151;
     --accent-color: #2563eb;
@@ -44,22 +43,6 @@ h6 {
 }
 
 
-.hero-bg-code {
-    font-size: 0.9rem;
-    color: #cbd5e1;
-    z-index: -1;
-    line-height: 1.8;
-    display: none;
-    /* hide for mobile or high zoom - mobile-first */
-}
-
-/* display IF the screen is larger*/
-@media (min-width: 992px) {
-    .hero-bg-code {
-        display: block;
-    }
-}
-
 .font-mono {
     font-family: var(--font-mono);
 }
@@ -89,13 +72,6 @@ h6 {
     color: var(--accent-color) !important;
 }
 
-
-.hero-bg-code {
-    font-size: 0.9rem;
-    color: #cbd5e1;
-    z-index: -1;
-    line-height: 1.8;
-}
 
 .mw-600 {
     max-width: 600px;
@@ -288,4 +264,72 @@ h6 {
 .unicorn-btn:hover {
     transform: scale(1.1);
     background-color: #e0c3fc;
+}
+
+
+
+
+/* --- MOBİL GÜNCELLEMELERİ v2 (Defensive Architecture) --- */
+
+/* 1. Yatay Taşmayı (Horizontal Scroll) Kesin Olarak Engelle */
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Uzun kelimelerin mobil ekranı sağa doğru patlatmasını engelle */
+h1,
+.display-1 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* 2. Hamburger İkonunu Küçültmek ve Sabitlemek */
+.navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.25rem;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+    background-size: 100% 100%;
+}
+
+/* FİLİGRAN KONUMLANDIRMASI (Hem Masaüstü Hem Mobil İçin) */
+.hero-bg-code {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    z-index: -1;
+    color: #656568;
+    line-height: 1.8;
+
+    opacity: 0.3;
+    font-size: 0.85rem;
+}
+
+/* Mobil Cihazlar İçin Filigran İnce Ayarı */
+@media (max-width: 991.98px) {
+    .hero-bg-code {
+        opacity: 0.3;
+        font-size: 0.5rem;
+    }
+}
+
+/* HEADER (HERO) YÜKSEKLİK VE BOŞLUK AYARLARI */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 140px !important;
+    padding-bottom: 60px !important;
+}
+
+@media (max-width: 1025px) {
+    .hero-section {
+        min-height: auto;
+        padding-top: 130px !important;
+        padding-bottom: 40px !important;
+    }
 }
