@@ -115,8 +115,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // greet recruiter
-    console.log("%cMerhaba! :) Buraya bakmanıza sevindim.", "color: #2563eb; font-size: 16px; font-weight: bold;");
-    console.log("Portföyün kendisi de bir hands-on öğrenme deneyimi oldu. Hatta başka projelerim olmasına rağmen ilk canlıya aldığım içerik bu. Siteyi clean code prensiplerini gözeterek HTML5, CSS3 ve Vanilla JS ile hazırlandım. Bu süreçte Gemini 3 Pro'dan da destek aldım. Sorularımı sağ olsun bıkmadan usanmadan yanıtladı. AI destekli bu dijital çağda öğrenme keyfi bambaşka!");
+    if (typeof console !== 'undefined' && typeof console.log === 'function') {
+        const message = "%cLooking under the hood? Nice! I bring QA precision to backend development. If you need a self-made .NET engineer who prioritizes scalable and robust architectures, say hi at nejlanurguney@gmail.com";
+        const style = "color: #2563eb; font-size: 16px; font-weight: bold;";
+
+        try {
+            console.log(message, style);
+        } catch (error) {
+
+        }
+    }
 });
 
 
