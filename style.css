@@ -152,6 +152,33 @@ h6 {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
+/* featured (flagship) project card */
+.project-card--featured {
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    border-left: 4px solid var(--accent-color);
+}
+
+.project-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.featured-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(37, 99, 235, 0.08);
+    color: var(--accent-color);
+}
+
 
 .timeline {
     border-left: 2px solid #e5e7eb;
@@ -248,6 +275,17 @@ h6 {
 .unicorn-btn:hover {
     transform: scale(1.1);
     background-color: #e0c3fc;
+}
+
+.softito-btn:hover {
+    transform: scale(1.1);
+    background-color: #bde0fe;
+}
+
+.footer-icon-img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 
 

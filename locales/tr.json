@@ -10,7 +10,7 @@
         "greeting": "Merhaba, ben Nejla Nur Yaşar.",
         "title_main": "Diller Tamam.",
         "title_sub": "Artık Mantığı Geliştiriyorum.",
-        "description": "AWS, Netflix ve Apple gibi küresel teknoloji devleriyle olan 5 yılı aşkın için Kalite Güvencesi (QA) geçmişimi Lean Six Sigma disipliniyle birleştiriyorum. <br> Şimdi <span class='text-highlight'>.NET ekosisteminde</span> güvenli, hata toleranslı ve yayınlanmaya hazır (<i>production-ready</i>) backend mimarileri geliştiriyorum.",
+        "description": "AWS, Netflix ve Apple gibi küresel teknoloji devleriyle edindiğim 5 yılı aşkın Kalite Güvencesi (QA) geçmişimi Lean Six Sigma disipliniyle birleştiriyorum. <br> Şimdi <span class='text-highlight'>.NET ekosisteminde</span> güvenli, hata toleranslı ve yayınlanmaya hazır (<i>production-ready</i>) backend mimarileri geliştiriyorum. En güncel projem, 320 saatlik yoğun bir backend eğitiminin son aşaması olarak geliştirdiğim bitirme projem 'Ekomart'.",
         "btn_projects": "Projeleri İncele",
         "btn_contact": "İletişime Geç"
     },
@@ -18,42 +18,51 @@
         "title": "Mühendis Bakış Açısı",
         "p1": "Prestijli markaların ürünlerinde edindiğim yerelleştirme ve kalite süreçleri deneyimi bana defalarca kez şunu çok net gösterdi: <strong>Tek bir hata veya süreç zafiyeti hem milyonlarca kullanıcıyı etkileyebilir hem de bir markanın itibarını yerle bir edebilir</strong>.",
         "p2": "Bugün aynı ince işçilik ve disiplini temiz, sürdürülebilir ve güvenli kod yazmaya uyguluyorum. Sadece sentaks yazmıyor; ölçeklenebilirliğe ve güvenilirliğe öncelik veren sağlam sistemler inşa ediyorum.",
-        "p3": "Bilgisayar ve yazılım mühendisliği temellerimi Harvard CS50 ve İstanbul Üniversitesi Yönetim Bilişim Sistemleri Lisans gibi programların yanı sıra sertifikalı ve kaliteli eğitimlerle de destekliyor, C# ve .NET Core kullanarak kurumsal düzeyde çözümler tasarlıyorum.",
+        "p3": "Bilgisayar ve yazılım mühendisliği temellerimi, İstanbul Ticaret Odası iş birliğiyle yürütülen 320 saatlik tam zamanlı bir backend mühendisliği programını tamamlayarak pekiştirdim. Eğitim süresince, adım adım karmaşıklığı artan toplam 11 ASP.NET Core uygulaması geliştirdim. Harvard CS50 ve İstanbul Üniversitesi Yönetim Bilişim Sistemleri lisans eğitimimle birlikte bu program, C# ve .NET Core'u kullanarak kurumsal düzeyde çözümler tasarlayabilmemi sağlıyor.",
         "p4": "Hedefim: Kalite, güvenlik ve mimariye olan çok boyutlu bakış açımı yenilikçi bir mühendislik ekibine katmak.",
         "focus_title": "Mimari Odak",
-        "focus_backend": "<strong>Backend & Mimari:</strong> C# ve .NET Core kullanarak N-Katmanlı mimari, RESTful API'ler ve SOLID prensipleriyle ölçeklenebilir sistemler tasarlıyorum.",
-        "focus_security": "<strong>Veri & Güvenlik:</strong> MSSQL, PostgreSQL ve Entity Framework Core ile veri bütünlüğünü sağlıyor; OWASP Güvenli Kodlama prensipleriyle CSRF/XSS zafiyetlerini proaktif olarak engelliyorum.",
-        "focus_quality": "<strong>Süreç & Kalite:</strong> Lean Six Sigma Yellow Belt sertifikalı bir geliştirici olarak, teknik borcu azaltan ve operasyonel mükemmelliği hedefleyen süreç odaklı geliştirmeler yapıyorum."
+        "focus_backend": "<strong>Backend ve Mimari:</strong> N-Katmanlı mimari, Repository/Unit of Work deseni ve SOLID prensipleriyle ölçeklenebilir sistemler tasarlıyorum. C# ve .NET Core üzerinde EF Core ve Dapper'ı bir arada kullanarak çift katmanlı veri erişim yapıları kurguluyorum.",
+        "focus_security": "<strong>Veri ve Güvenlik:</strong> MSSQL, PostgreSQL ve Entity Framework Core ile veri bütünlüğünü sağlıyor; ASP.NET Identity, JWT ve Google OAuth entegrasyonu gerçekleştiriyor ve OWASP Güvenli Kodlama prensipleriyle CSRF/XSS zafiyetlerini proaktif olarak engellemeye çalışıyorum.",
+        "focus_quality": "<strong>Süreç ve Kalite:</strong> Lean Six Sigma Yellow Belt sertifikalı bir geliştirici olarak, teknik borcu azaltan ve operasyonel mükemmelliği hedefleyen süreç odaklı geliştirmeler yapıyorum."
     },
     "stack": {
         "title": "Teknoloji Envanteri",
-        "cat_1": "Framework & Mimari",
-        "cat_2": "Veritabanı & ORM",
-        "cat_3": "Güvenlik & API",
-        "cat_4": "DevOps & QA",
+        "cat_1": "Framework ve Mimari",
+        "cat_2": "Veritabanı ve ORM",
+        "cat_3": "Güvenlik ve API",
+        "cat_4": "Bulut, DevOps ve Kalite (QA)",
         "loading_title": "Compiling...",
-        "loading_desc": "Güncel odak alanım:"
+        "loading_desc": "Güncel odak alanlarım:"
     },
     "projects": {
         "title": "Projeler",
-        "p1_title": "Türk Tarım Enterprise CMS",
-        "p1_desc": "C# ve .NET Core kullanılarak N-Katmanlı mimaride geliştirilmiş; rol tabanlı erişim kontrolü (RBAC) ve güvenli dosya yönetimi sunan kurumsal bir içerik yönetim sistemidir. CSRF, XSS ve diğer güvenlik açıklarına karşı savunmacı programlama uygulamalarıyla korunmaktadır."
+        "featured_label": "Bitirme Projesi",
+        "p1_title": "EKOMART — E-Ticaret Platformu",
+        "p1_desc": "Ortak bir Repository/Unit of Work soyutlaması üzerinden EF Core ve Dapper'ı bir arada kullanan çift veri katmanlı, uçtan uca N-Katmanlı (Entity → Data → Business → API/Web) e-ticaret platformu. Bağımsız MVC ve API yüzeylerinde ASP.NET Identity, Google OAuth ve JWT entegrasyonuna, tam <i>transaction</i> güvenliğine sahip ödeme (<i>checkout</i>) altyapısına, PDF/Excel/QR üretimine ve yapay zeka tabanlı yorum moderasyonu iş akışına sahiptir. Sistem, Cloudflare <i>proxy</i> destekli özel alan adıyla Azure App Service üzerinde canlı ortama alınmış olup CI/CD süreçleri GitHub Actions ile otomatize edilmiştir.",
+        "p2_title": "Türk Tarım —Enterprise CMS",
+        "p2_desc": "C# ve .NET Core üzerinde N-Katmanlı mimari ile tasarlanmış, rol tabanlı erişim kontrolü (RBAC) ve güvenli dosya yönetimi altyapısına sahip kurumsal içerik yönetim sistemi. Olası zafiyetlere karşı savunmacı prensipler katı bir şekilde uygulanarak yüksek güvenlik standartları sağlanmıştır.",
+        "p3_title": "The Venue — Etkinlik Yönetim Sistemi",
+        "p3_desc": "Yüksek performanslı veri erişimi amacıyla Dapper ve T-SQL Stored Procedure'lar kullanılarak geliştirilmiş, bağımsız (<i>decoupled</i>) API ve MVC bileşenlerinden oluşan bir etkinlik mekanı rezervasyon platformu. Repository tasarım deseni ve DTO mimarisi uçtan uca kurgulanmış, API katmanını aşırı ve kötü niyetli isteklere karşı korumak üzere <i>sliding-window</i> tabanlı <i>Rate Limiting</i> mekanizması entegre edilmiştir."
     },
     "experience": {
         "title": "Profesyonel Temel",
-        "job1_date": "Ağustos 2025 - Günümüz",
-        "job1_title": "Yazılım Mühendisi (Backend / Full Stack)",
-        "job1_location": "Portföy Geliştirme",
-        "job1_list": "<li>.NET ekosisteminde güvenli ve ölçeklenebilir backend çözümleri (RESTful API, Microservices); mimari ve tasarım.</li><li>N-Katmanlı mimari ve Entity Framework Core ile kurumsal veri erişim katmanları geliştirme.</li><li>OWASP standartlarında zafiyet koruması entegrasyonu ve güvenlik uygulamaları.</li>",
-        "job2_date": "Ağustos 2019 - Kasım 2025",
-        "job2_title": "QA Specialist & Technical Linguist",
-        "job2_location": "Netflix, Apple, AWS, Kaspersky",
-        "job2_list": "<li>Netflix ve Apple yazılım arayüzleri için In-Context Review (ICR) ve Kalite Güvence (QA) süreçlerinin yönetimi.</li><li>Amazon Web Services (AWS) başta olmak üzere bulut mimarisi ve siber güvenlik yazılımları için teknik terim bütünlüğünün sağlanması.</li><li>\"<i>Netflix Studio Localization Style Guide</i>\"ın oluşturulması ve süreç iyileştirmeleri (Six Sigma).</li>"
+        "job1_date": "Mayıs 2026 - Temmuz 2026",
+        "job1_title": "Backend Developer Programı — SoftITo (İstanbul Ticaret Odası)",
+        "job1_location": "Online Temel Eğitim + Yüz Yüze Akademi, Dünya Ticaret Merkezi",
+        "job1_list": "<li>Online temel eğitim aşaması ve haftada beş gün yüz yüze akademiden oluşan 320 saatlik tam zamanlı bir backend geliştirme programının tamamlanması.</li><li>ADO.NET, EF Core, Dapper, Web API'ler, RBAC ve önbellekleme konularını kapsayan, kademeli olarak karmaşıklaşan 11 ASP.NET Core uygulaması geliştirilmesi. Bitirme projesinin canlıya alarak <i>production</i> tecrübesinin pekiştirilmesi.</li><li>Yardımlaşarak birlikte öğrenilen sınıf ortamında SOLID prensiplerinin ve katmanlı mimari ilkelerinin uygulanması.</li>",
+        "job2_date": "Ağustos 2025 - Günümüz",
+        "job2_title": "Junior Yazılım Mühendisi (Backend / Full Stack)",
+        "job2_location": "Portföy Geliştirme",
+        "job2_list": "<li>Örgün eğitimden bağımsız olarak güvenli ve ölçeklenebilir .NET backend sistemleri tasarlanmasının yanı sıra, yaygın zafiyetleri önlemek için savunmacı programlama prensiplerinin uygulanması.</li><li>N-Katmanlı mimari ve Entity Framework Core ile kurumsal veri erişim katmanları geliştirilmesi.</li>",
+        "job3_date": "Ağustos 2019 - Kasım 2025",
+        "job3_title": "QA Specialist & Technical Linguist",
+        "job3_location": "Netflix, Apple, AWS, Google, Kaspersky",
+        "job3_list": "<li>Netflix ve Apple yazılım arayüzleri için In-Context Review (ICR) ve Kalite Güvence (QA) süreçlerinin yönetimi.</li><li>Amazon Web Services (AWS) başta olmak üzere bulut mimarisi ve siber güvenlik yazılımları için teknik terim bütünlüğünün sağlanması.</li><li>\"<i>Netflix Studio Localization Style Guide</i>\"ın oluşturulması ve süreç iyileştirmeleri (Six Sigma).</li><li>Shopify Turkish Language Owner rolü kapsamında çeviri bellekleri (TM) ile terminoloji veri tabanlarının yönetim ve bakımı.</li>"
     },
     "contact": {
         "title": "Sırada Ne Var?",
         "main_heading": "Birlikte Geliştirelim",
-        "text": "Şu anda Backend, .NET Geliştirici ve Full Stack pozisyonlarına açığım. Özellikle Fintech ve E-commerce alanlarıyla ilgileniyorum. Takımınıza kalite, güvenlik ve mimari konusundaki çok boyutlu bakış açımı katmaya hazırım.",
+        "text": "Şu anda Backend, .NET Geliştirici ve C# Geliştirici pozisyonlarına açığım. Özellikle Fintech ve E-commerce alanlarıyla ilgileniyorum. Takımınıza kalite, güvenlik ve mimari konusundaki çok boyutlu bakış açımı katmaya hazırım.",
         "btn_email": "E-posta Gönder"
     },
     "footer": {

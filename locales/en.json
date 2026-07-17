@@ -10,7 +10,7 @@
         "greeting": "Hello, I'm Nejla Nur Yasar.",
         "title_main": "Languages? Mastered.",
         "title_sub": "Now Engineering the Logic.",
-        "description": "I leverage over five years of Quality Assurance (QA) experience with global tech giants like AWS, Netflix, and Apple, combining this expertise with Lean Six Sigma methodologies. <br> I now architect secure, fault-tolerant, and production-ready backend systems within the <span class='text-highlight'>.NET ecosystem</span>.",
+        "description": "I leverage over five years of Quality Assurance (QA) experience with global tech giants like AWS, Netflix, and Apple, combining this expertise with Lean Six Sigma methodologies. <br> I now architect secure, fault-tolerant, and production-ready backend systems within the <span class='text-highlight'>.NET ecosystem</span>, most recently shipping EKOMART, a live N-Tier e-commerce platform, as the capstone of an intensive backend engineering program.",
         "btn_projects": "View Projects",
         "btn_contact": "Get in Touch"
     },
@@ -18,11 +18,11 @@
         "title": "Engineering Perspective",
         "p1": "My experience in localization and quality assurance for flagship products of prestigious brands has consistently reinforced a critical lesson: <strong>A single bug or process vulnerability can impact millions of users and severely damage brand reputation.</strong>",
         "p2": "Today, I apply that same meticulous precision and discipline to writing clean, maintainable, and secure code. I do not merely write syntax; I engineer robust systems that prioritize scalability and reliability.",
-        "p3": "I consolidate my computer science and software engineering foundations through rigorous programs such as Harvard CS50, a B.A. in Management Information Systems at Istanbul University, and premium certified training, enabling me to architect enterprise-grade solutions using C# and .NET Core.",
+        "p3": "I recently completed a 320-hour, full-time backend engineering program run with the Istanbul Chamber of Commerce, building 11 progressively complex ASP.NET Core applications. Alongside Harvard's CS50 and an ongoing B.A. in Management Information Systems at Istanbul University, this consolidates my computer science foundations and lets me architect enterprise-grade solutions using C# and .NET Core.",
         "p4": "My Goal: To integrate my multidimensional perspective on quality, security, and architecture into a forward-thinking engineering team.",
         "focus_title": "Architectural Focus",
-        "focus_backend": "<strong>Backend & Architecture:</strong> Designing scalable systems using N-Tier architecture, RESTful APIs, and SOLID principles with C# and .NET Core.",
-        "focus_security": "<strong>Data & Security:</strong> Ensuring data integrity with MSSQL, PostgreSQL, and Entity Framework Core; proactively mitigating CSRF/XSS vulnerabilities through OWASP Secure Coding principles.",
+        "focus_backend": "<strong>Backend & Architecture:</strong> Designing scalable systems using N-Tier architecture, the Repository/Unit of Work pattern, and SOLID principles, with a dual EF Core/Dapper data layer across C# and .NET Core.",
+        "focus_security": "<strong>Data & Security:</strong> Ensuring data integrity with MSSQL, PostgreSQL, and Entity Framework Core; implementing ASP.NET Identity, JWT, and Google OAuth while proactively mitigating CSRF/XSS vulnerabilities through OWASP Secure Coding principles.",
         "focus_quality": "<strong>Process & Quality:</strong> As a Lean Six Sigma Yellow Belt certified developer, I execute process-driven development aimed at reducing technical debt and achieving operational excellence."
     },
     "stack": {
@@ -30,30 +30,39 @@
         "cat_1": "Frameworks & Architecture",
         "cat_2": "Databases & ORM",
         "cat_3": "Security & APIs",
-        "cat_4": "DevOps & QA",
+        "cat_4": "Cloud, DevOps & QA",
         "loading_title": "Compiling...",
         "loading_desc": "Current focus:"
     },
     "projects": {
         "title": "Projects",
-        "p1_title": "Türk Tarım Enterprise CMS",
-        "p1_desc": "An enterprise-grade Content Management System developed in an N-Tier architecture using C# and .NET Core, featuring Role-Based Access Control (RBAC) and secure file management. It is protected against CSRF, XSS, and other vulnerabilities through strict defensive programming practices."
+        "featured_label": "Capstone Project",
+        "p1_title": "EKOMART — E-Commerce Platform",
+        "p1_desc": "A full N-Tier e-commerce platform (Entities → Data → Business → Api/Web) with a dual EF Core/Dapper data layer behind a shared Repository/Unit of Work abstraction. Features ASP.NET Identity, Google OAuth, and JWT across separate MVC and API surfaces, atomic transaction-safe checkout with real-time stock re-validation, PDF/Excel/QR generation, and an AI-powered review moderation pipeline. Deployed to production on Azure App Service with a Cloudflare-proxied custom domain and GitHub Actions CI/CD.",
+        "p2_title": "Türk Tarım — Enterprise CMS",
+        "p2_desc": "An enterprise-grade Content Management System developed in an N-Tier architecture using C# and .NET Core, featuring Role-Based Access Control (RBAC) and secure file management. It is protected against CSRF, XSS, and other vulnerabilities through strict defensive programming practices.",
+        "p3_title": "The Venue — Event Management System",
+        "p3_desc": "A decoupled API/MVC venue-booking system built with Dapper and T-SQL stored procedures for high-performance data access. Applies the Repository pattern and DTOs end-to-end, with sliding-window rate limiting to protect the API from abuse."
     },
     "experience": {
         "title": "Professional Foundation",
-        "job1_date": "August 2025 - Present",
-        "job1_title": "Software Engineer (Backend / Full Stack)",
-        "job1_location": "Portfolio Development",
-        "job1_list": "<li>Architecting and designing secure, scalable backend solutions (RESTful APIs, Microservices) within the .NET ecosystem.</li><li>Developing enterprise data access layers utilizing N-Tier architecture and Entity Framework Core.</li><li>Integrating vulnerability mitigation and security practices aligned with OWASP standards.</li>",
-        "job2_date": "August 2019 - November 2025",
-        "job2_title": "QA Specialist & Technical Linguist",
-        "job2_location": "Netflix, Apple, AWS, Kaspersky",
-        "job2_list": "<li>Managed In-Context Review (ICR) and Quality Assurance (QA) processes for Netflix and Apple software interfaces.</li><li>Ensured technical terminology consistency for cloud architecture and cybersecurity software, primarily for Amazon Web Services (AWS).</li><li>Authored the \"<i>Netflix Studio Localization Style Guide</i>\" and implemented process optimizations (Lean Six Sigma).</li>"
+        "job1_date": "May 2026 - Jul 2026",
+        "job1_title": "Backend Developer Program — SoftITo (Istanbul Chamber of Commerce)",
+        "job1_location": "Online Foundation + In-Person Academy, Dünya Ticaret Merkezi",
+        "job1_list": "<li>Completed a full-time, 320-hour backend engineering program spanning an online foundation phase and an in-person academy, five days a week.</li><li>Built 11 progressively complex ASP.NET Core applications covering ADO.NET, EF Core, Dapper, Web APIs, RBAC, and caching, culminating in EKOMART, a capstone e-commerce platform deployed to production.</li><li>Practiced SOLID principles and layered architecture habits in a collaborative studio environment.</li>",
+        "job2_date": "August 2025 - Present",
+        "job2_title": "Junior Software Engineer (Backend / Full Stack)",
+        "job2_location": "Portfolio Development",
+        "job2_list": "<li>Designing and building secure, scalable .NET backend systems independent of formal coursework, applying defensive programming practices to pre-empt common vulnerabilities.</li><li>Architecting enterprise data access layers utilizing N-Tier architecture and Entity Framework Core.</li><li>Integrating vulnerability mitigation and security practices aligned with OWASP standards.</li>",
+        "job3_date": "August 2019 - November 2025",
+        "job3_title": "QA Specialist & Technical Linguist",
+        "job3_location": "Netflix, Apple, AWS, Google, Kaspersky",
+        "job3_list": "<li>Managed In-Context Review (ICR) and Quality Assurance (QA) processes for Netflix and Apple software interfaces.</li><li>Ensured technical terminology consistency for cloud architecture and cybersecurity software, primarily for Amazon Web Services (AWS).</li><li>Authored the \"<i>Netflix Studio Localization Style Guide</i>\" and implemented process optimizations (Lean Six Sigma).</li><li>Served as Turkish Language Owner for Shopify, managing Translation Memories and terminology databases across pipelines.</li>"
     },
     "contact": {
         "title": "What's Next?",
         "main_heading": "Let's Build Together",
-        "text": "I am currently open to Backend, .NET Developer, and Full Stack positions, with a particular interest in the Fintech and E-commerce sectors. I am ready to contribute my multidimensional perspective on quality, security, and architecture to your team.",
+        "text": "I am currently open to Backend, .NET Developer, and C# Developer positions, with a particular interest in the Fintech and E-commerce sectors. I am ready to contribute my multidimensional perspective on quality, security, and architecture to your team.",
         "btn_email": "Send an Email"
     },
     "footer": {
