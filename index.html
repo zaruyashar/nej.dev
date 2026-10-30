@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,12 +7,12 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <title>Nejla Nur Yaşar | Backend Developer</title>
+    <title>Nejla Nur Yaşar | Backend & AI Engineer (.NET)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="100">
@@ -25,18 +25,16 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav font-mono small">
-                    <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">01. Hakkında</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#stack" data-i18n="nav.stack">02. Yığın</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">03. Projeler</a>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">01. About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stack" data-i18n="nav.stack">02. Stack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">03. Projects</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav.experience">04.
-                            Geçmiş</a></li>
-                    <li class="nav-item"><a class="nav-link text-accent" href="#contact" data-i18n="nav.contact">05.
-                            İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav.experience">04. Experience</a></li>
+                    <li class="nav-item"><a class="nav-link text-accent" href="#contact" data-i18n="nav.contact">05. Contact</a></li>
                     <li class="nav-item ms-lg-3 d-flex align-items-center">
-                        <div class="lang-switch font-mono small d-flex gap-2"> <span onclick="setLanguage('tr')"
+                        <div class="lang-switch font-mono small d-flex gap-2"> <span data-lang="tr"
                                 id="btn-tr" class="lang-btn">TR</span>
-                            <span onclick="setLanguage('en')" id="btn-en" class="lang-btn">EN</span>
+                            <span data-lang="en" id="btn-en" class="lang-btn">EN</span>
                         </div>
                     </li>
                 </ul>
@@ -46,9 +44,9 @@
 
     <div class="hero-bg-code font-mono text-end pe-3 pe-lg-5 pt-5">
         while(learning) {<br>
-        &nbsp;&nbsp;skills.push('RESTful APIs');<br>
-        &nbsp;&nbsp;skills.push('Microservices');<br>
-        &nbsp;&nbsp;infrastructure.optimize();<br>
+        &nbsp;&nbsp;skills.push('Secure by Design');<br>
+        &nbsp;&nbsp;skills.push('AI Integration');<br>
+        &nbsp;&nbsp;threats.model();<br>
         }
     </div>
 
@@ -56,79 +54,91 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <p class="font-mono text-accent mb-2" data-i18n="hero.greeting">Merhaba, ben Nejla Nur Yaşar.</p>
+                    <p class="font-mono text-accent mb-2" data-i18n="hero.greeting">Hello, I'm Nejla Nur Yaşar.</p>
                     <h1 class="display-1 fw-bold tracking-tighter mb-3">
-                        <span data-i18n="hero.title_main">Diller Tamam.</span><br>
-                        <span class="text-secondary-custom" data-i18n="hero.title_sub">Artık Mantığı
-                            Geliştiriyorum.</span>
+                        <span data-i18n="hero.title_main">Languages? Mastered.</span><br>
+                        <span class="text-secondary-custom" data-i18n="hero.title_sub">Now Engineering Secure Systems.</span>
                     </h1>
                     <p class="lead text-muted mw-600 mb-5" data-i18n="hero.description">
-                        AWS, Netflix ve Apple gibi küresel teknoloji devleriyle olan 5 yılı aşkın için Kalite Güvencesi
-                        (QA) geçmişimi Lean Six Sigma disipliniyle birleştiriyorum. <br> Şimdi <span
-                            class='text-highlight'>.NET ekosisteminde</span> güvenli, hata toleranslı ve yayınlanmaya
-                        hazır (<i>production-ready</i>) backend mimarileri geliştiriyorum.
+                        I'm a backend and AI engineer working in the <span class='text-highlight'>.NET
+                        ecosystem</span>. After 5+ years of QA on software for global tech clients like
+                        Netflix, Apple, and AWS, I build systems that catch problems before they ship:
+                        secure by design and production-ready. <br> My capstone, EKOMART, is a live N-Tier
+                        e-commerce platform with an AI review-moderation pipeline.
                     </p>
                     <div class="d-flex align-items-center gap-3">
                         <a href="#projects" class="btn btn-custom-primary font-mono"
-                            data-i18n="hero.btn_projects">Projeleri İncele</a>
-                        <a href="#contact" class="btn btn-custom-dark font-mono" data-i18n="hero.btn_contact">İletişime
-                            Geç</a>
+                            data-i18n="hero.btn_projects">View Projects</a>
+                        <a href="#contact" class="btn btn-custom-dark font-mono" data-i18n="hero.btn_contact">Get in Touch</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="about" class="py-5 bg-light-custom" style="padding-top: 6rem; padding-bottom: 6rem;">
+    <section id="about" class="py-5 bg-light-custom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <h2 class="section-title">
-                        <span class="text-accent font-mono">01.</span><span data-i18n="about.title">Mühendis Bakış
-                            Açısı</span>
+                        <span class="text-accent font-mono">01.</span><span data-i18n="about.title">Engineering Perspective</span>
                     </h2>
 
-                    <p class="mt-4" data-i18n="about.p1">Prestijli markaların ürünlerinde edindiğim yerelleştirme ve
-                        kalite süreçleri deneyimi bana defalarca kez şunu çok net gösterdi: <strong>Tek bir hata veya
-                            süreç zafiyeti hem milyonlarca kullanıcıyı etkileyebilir hem de bir markanın itibarını yerle
-                            bir edebilir</strong>.</p>
-                    <p data-i18n="about.p2">Bugün aynı ince işçilik ve disiplini temiz, sürdürülebilir ve güvenli kod
-                        yazmaya uyguluyorum. Sadece sentaks yazmıyor; ölçeklenebilirliğe ve güvenilirliğe öncelik veren
-                        sağlam sistemler inşa ediyorum.</p>
-                    <p data-i18n="about.p3">Bilgisayar ve yazılım mühendisliği temellerimi, İstanbul Ticaret Odası iş
-                        birliğiyle yürütülen 320 saatlik tam zamanlı bir backend mühendisliği programını tamamlayarak
-                        pekiştirdim. Eğitim süresince, adım adım karmaşıklığı artan toplam 11 ASP.NET Core uygulaması
-                        geliştirdim. Harvard CS50 ve İstanbul Üniversitesi Yönetim Bilişim Sistemleri lisans eğitimimle
-                        birlikte bu program, C# ve .NET Core'u kullanarak kurumsal düzeyde çözümler tasarlayabilmemi
-                        sağlıyor.</p>
-                    <p data-i18n="about.p4">Hedefim: Kalite, güvenlik ve mimariye olan çok boyutlu bakış açımı yenilikçi
-                        bir mühendislik ekibine katmak.</p>
+                    <p class="mt-4" data-i18n="about.p1">
+                        My experience in localization and quality assurance for flagship products of
+                        prestigious brands has consistently reinforced a critical lesson: <strong>A single
+                        bug or process vulnerability can impact millions of users and severely damage brand
+                        reputation.</strong>
+                    </p>
+                    <p data-i18n="about.p2">
+                        Today I apply that same meticulous precision much earlier in the process: instead of
+                        finding defects after release, I focus on preventing them at design time. I write
+                        clean, maintainable, secure-by-design code. I do not merely write syntax; I engineer
+                        robust systems that prioritize scalability and reliability.
+                    </p>
+                    <p data-i18n="about.p3">
+                        I recently completed a 320-hour, full-time backend engineering program run with the
+                        Istanbul Chamber of Commerce, building 11 progressively complex ASP.NET Core
+                        applications. Alongside Harvard's CS50 and an ongoing B.Sc. in Management
+                        Information Systems at Istanbul University, this consolidates my computer science
+                        foundations and lets me architect enterprise-grade solutions using C# and .NET.
+                    </p>
+                    <p data-i18n="about.p4">
+                        My Goal: To bring my multidimensional perspective on quality, security, and
+                        architecture to a forward-thinking engineering team building backend and AI systems.
+                    </p>
 
                 </div>
                 <div class="col-lg-5 offset-lg-1">
                     <div class="card border-0 shadow-sm p-4 h-100">
-                        <h4 class="h5 mb-3 font-mono" data-i18n="about.focus_title">Mimari Odak</h4>
+                        <h4 class="h5 mb-3 font-mono" data-i18n="about.focus_title">Architectural Focus</h4>
                         <ul class="list-unstyled">
                             <li class="mb-2">
                                 <i class="bi bi-arrow-right text-accent me-2"></i>
-                                <span data-i18n="about.focus_backend"><strong>Backend ve Mimari:</strong> N-Katmanlı
-                                    mimari, Repository/Unit of Work deseni ve SOLID prensipleriyle ölçeklenebilir
-                                    sistemler tasarlıyorum. C# ve .NET Core üzerinde EF Core ve Dapper'ı bir arada
-                                    kullanarak çift katmanlı veri erişim yapıları kurguluyorum.</span>
+                                <span data-i18n="about.focus_backend"><strong>Backend & Architecture:</strong> Designing scalable systems using N-Tier architecture, the
+                                    Repository/Unit of Work pattern, and SOLID principles, with a dual EF
+                                    Core/Dapper data layer across C# and .NET.</span>
                             </li>
                             <li class="mb-2">
                                 <i class="bi bi-arrow-right text-accent me-2"></i>
-                                <span data-i18n="about.focus_security"><strong>Veri ve Güvenlik:</strong> MSSQL,
-                                    PostgreSQL ve Entity Framework Core ile veri bütünlüğünü sağlıyor; ASP.NET Identity,
-                                    JWT ve Google OAuth entegrasyonu gerçekleştiriyor ve OWASP Güvenli Kodlama
-                                    prensipleriyle CSRF/XSS zafiyetlerini proaktif olarak engellemeye
-                                    çalışıyorum.</span>
+                                <span data-i18n="about.focus_security"><strong>Data & Security:</strong> Ensuring data integrity with MSSQL, PostgreSQL, and Entity Framework Core;
+                                    implementing ASP.NET Identity, JWT, and Google OAuth while proactively
+                                    mitigating CSRF/XSS vulnerabilities through OWASP Secure Coding
+                                    principles. Application security and threat modeling are my focus areas,
+                                    with an emphasis on catching risk at design time.</span>
                             </li>
                             <li class="mb-2">
                                 <i class="bi bi-arrow-right text-accent me-2"></i>
-                                <span data-i18n="about.focus_quality"><strong>Süreç ve Kalite:</strong> Lean Six Sigma
-                                    Yellow Belt sertifikalı bir geliştirici olarak, teknik borcu azaltan ve operasyonel
-                                    mükemmelliği hedefleyen süreç odaklı geliştirmeler yapıyorum.</span>
+                                <span data-i18n="about.focus_ai"><strong>AI Integration:</strong> Building LLM-backed features that can be tested and measured: an AI
+                                    review-moderation pipeline running in production on EKOMART and, as my
+                                    current focus, a retrieval-augmented generation (RAG) assistant over
+                                    Turkish legislation.</span>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-arrow-right text-accent me-2"></i>
+                                <span data-i18n="about.focus_quality"><strong>Process & Quality:</strong> As a Lean Six Sigma Yellow Belt certified developer, I execute
+                                    process-driven development aimed at reducing technical debt and
+                                    achieving operational excellence.</span>
                             </li>
                         </ul>
                     </div>
@@ -137,20 +147,19 @@
         </div>
     </section>
 
-    <section id="stack" class="py-5" style="padding-top: 6rem; padding-bottom: 6rem;">
+    <section id="stack" class="py-5">
         <div class="container">
             <h2 class="section-title mb-5">
-                <span class="text-accent font-mono">02.</span><span data-i18n="stack.title">Teknoloji Envanteri</span>
+                <span class="text-accent font-mono">02.</span><span data-i18n="stack.title">Tech Stack</span>
             </h2>
 
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="tech-card h-100">
-                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_1">Framework ve Mimari
-                        </h3>
+                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_1">Frameworks & Architecture</h3>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="badge-custom">C#</span>
-                            <span class="badge-custom">.NET Core</span>
+                            <span class="badge-custom">.NET</span>
                             <span class="badge-custom">ASP.NET Core MVC & Web API</span>
                             <span class="badge-custom">N-Tier / Repository & UoW</span>
                         </div>
@@ -159,8 +168,7 @@
 
                 <div class="col-md-6">
                     <div class="tech-card h-100">
-                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_2">Veritabanı ve ORM
-                        </h3>
+                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_2">Databases & ORM</h3>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="badge-custom">MSSQL (T-SQL)</span>
                             <span class="badge-custom">Entity Framework Core</span>
@@ -173,28 +181,51 @@
 
                 <div class="col-md-6">
                     <div class="tech-card h-100">
-                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_3">Güvenlik ve API
-                        </h3>
+                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_3">Security & APIs</h3>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="badge-custom">RESTful APIs</span>
                             <span class="badge-custom">Identity & JWT</span>
                             <span class="badge-custom">Google OAuth</span>
                             <span class="badge-custom">RBAC</span>
                             <span class="badge-custom">OWASP Secure Coding</span>
+                            <span class="badge-custom">Threat Modeling</span>
+                            <span class="badge-custom">Application Security</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="tech-card h-100">
-                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_4">Bulut, DevOps ve
-                            Kalite (QA)</h3>
+                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_5">AI & LLM Integration</h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge-custom">LLM / Inference APIs</span>
+                            <span class="badge-custom">AI Content Moderation</span>
+                            <span class="badge-custom">RAG (in progress)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tech-card h-100">
+                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_4">Cloud & DevOps</h3>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="badge-custom">Azure App Service / SQL</span>
                             <span class="badge-custom">Docker</span>
                             <span class="badge-custom">GitHub Actions (CI/CD)</span>
                             <span class="badge-custom">Git / GitHub</span>
+                            <span class="badge-custom">Cloudflare</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tech-card h-100">
+                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_6">Process & Quality</h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge-custom">Lean Six Sigma (Yellow Belt)</span>
                             <span class="badge-custom">Agile / Scrum</span>
+                            <span class="badge-custom">Jira</span>
+                            <span class="badge-custom">Quality Assurance (QA)</span>
                         </div>
                     </div>
                 </div>
@@ -208,9 +239,9 @@
                     <div class="col-md-10">
                         <h5 class="font-mono h6 mb-2" data-i18n="stack.loading_title">Compiling...</h5>
                         <p class="small text-muted mb-0">
-                            <span data-i18n="stack.loading_desc">Güncel odak alanlarım:</span>
-                            <span class="text-dark fw-bold">Unit Testing, Microservices, AI & 3rd Party API
-                                Integration</span>
+                            <span data-i18n="stack.loading_desc">Current focus:</span>
+                            <span class="text-dark fw-bold">Async Programming, RAG & LLM Evaluation,
+                                Threat Modeling</span>
                         </p>
                     </div>
                 </div>
@@ -218,10 +249,10 @@
         </div>
     </section>
 
-    <section id="projects" class="py-5 bg-light-custom" style="padding-top: 6rem; padding-bottom: 6rem;">
+    <section id="projects" class="py-5 bg-light-custom">
         <div class="container">
             <h2 class="section-title mb-5">
-                <span class="text-accent font-mono">03.</span><span data-i18n="projects.title">Projeler</span>
+                <span class="text-accent font-mono">03.</span><span data-i18n="projects.title">Projects</span>
             </h2>
 
             <div class="row g-4 mb-4">
@@ -238,19 +269,17 @@
                                 </a>
                             </div>
                         </div>
-                        <p class="project-eyebrow" data-i18n="projects.featured_label">Bitirme Projesi</p>
-                        <h3 class="h3 fw-bold mb-3" data-i18n="projects.p1_title">EKOMART — E-Ticaret Platformu</h3>
+                        <p class="project-eyebrow" data-i18n="projects.featured_label">Capstone Project</p>
+                        <h3 class="h3 fw-bold mb-3" data-i18n="projects.p1_title">EKOMART — E-Commerce Platform</h3>
                         <p class="text-muted mb-4 mw-600" data-i18n="projects.p1_desc">
-                            Ortak bir Repository/Unit of Work soyutlaması üzerinden EF Core ve Dapper'ı bir arada
-                            kullanan çift veri katmanlı, uçtan uca N-Katmanlı (Entity → Data → Business → API/Web)
-                            e-ticaret platformu. Bağımsız MVC ve API yüzeylerinde ASP.NET Identity, Google OAuth ve JWT
-                            entegrasyonuna, tam <i>transaction</i> güvenliğine
-                            sahip ödeme (<i>checkout</i>) altyapısına, PDF/Excel/QR üretimine ve yapay zeka tabanlı
-                            yorum
-                            moderasyonu iş akışına sahiptir. Sistem, Cloudflare <i>proxy</i> destekli özel alan adıyla
-                            Azure App
-                            Service üzerinde canlı ortama alınmış olup CI/CD süreçleri GitHub Actions ile otomatize
-                            edilmiştir.
+                            A full N-Tier e-commerce platform (Entities → Data → Business → Api/Web) with a
+                            dual EF Core/Dapper data layer behind a shared Repository/Unit of Work
+                            abstraction. Features ASP.NET Identity, Google OAuth, and JWT across separate
+                            MVC and API surfaces, atomic transaction-safe checkout with real-time stock
+                            re-validation, PDF/Excel/QR generation, and an AI-powered review moderation
+                            pipeline (translation and toxicity classification via the Hugging Face Inference
+                            API). Deployed to production on Azure App Service with a Cloudflare-proxied
+                            custom domain and GitHub Actions CI/CD.
                         </p>
                         <div class="tech-stack-list font-mono x-small text-accent d-flex flex-wrap gap-2">
                             <span class="badge-custom">ASP.NET Core MVC</span>
@@ -278,10 +307,11 @@
                         </div>
                         <h3 class="h4 fw-bold mb-3" data-i18n="projects.p2_title">Türk Tarım — Enterprise CMS</h3>
                         <p class="text-muted mb-4" data-i18n="projects.p2_desc">
-                            C# ve .NET Core üzerinde N-Katmanlı mimari ile tasarlanmış, rol tabanlı erişim kontrolü
-                            (RBAC) ve güvenli dosya yönetimi altyapısına sahip kurumsal içerik yönetim sistemi. Olası
-                            zafiyetlere karşı savunmacı prensipler katı bir şekilde uygulanarak yüksek güvenlik
-                            standartları sağlanmıştır.
+                            An enterprise-grade Content Management System developed in an N-Tier
+                            architecture using C# and .NET, featuring Role-Based Access Control (RBAC) and
+                            secure file management. Defensive programming practices are applied
+                            project-wide, with mitigations for common vulnerabilities such as CSRF, XSS, and
+                            mass assignment.
                         </p>
                         <div class="tech-stack-list font-mono x-small text-accent d-flex flex-wrap gap-2">
                             <span class="badge-custom">ASP.NET Core MVC</span>
@@ -301,14 +331,12 @@
                                     rel="noopener noreferrer" class="mx-2"><i class="bi bi-github h4"></i></a>
                             </div>
                         </div>
-                        <h3 class="h4 fw-bold mb-3" data-i18n="projects.p3_title">The Venue — Etkinlik Yönetim Sistemi
-                        </h3>
+                        <h3 class="h4 fw-bold mb-3" data-i18n="projects.p3_title">The Venue — Event Management System</h3>
                         <p class="text-muted mb-4" data-i18n="projects.p3_desc">
-                            Yüksek performanslı veri erişimi amacıyla Dapper ve T-SQL Stored Procedure'lar kullanılarak
-                            geliştirilmiş, bağımsız (<i>decoupled</i>) API ve MVC bileşenlerinden oluşan bir etkinlik
-                            mekanı rezervasyon platformu. Repository tasarım deseni ve DTO mimarisi uçtan uca
-                            kurgulanmış, API katmanını aşırı ve kötü niyetli isteklere karşı korumak üzere
-                            <i>sliding-window</i> tabanlı <i>Rate Limiting</i> mekanizması entegre edilmiştir.
+                            A decoupled API/MVC venue-booking system built with Dapper and T-SQL stored
+                            procedures for high-performance data access. Applies the Repository pattern and
+                            DTOs end-to-end, with sliding-window rate limiting to protect the API from
+                            abuse.
                         </p>
                         <div class="tech-stack-list font-mono x-small text-accent d-flex flex-wrap gap-2">
                             <span class="badge-custom">ASP.NET Core Web API</span>
@@ -323,67 +351,84 @@
     </section>
 
 
-    <section id="experience" class="py-5" style="padding-top: 6rem; padding-bottom: 6rem;">
+    <section id="experience" class="py-5">
         <div class="container">
             <h2 class="section-title mb-5">
-                <span class="text-accent font-mono">04.</span><span data-i18n="experience.title">Profesyonel
-                    Temel</span>
+                <span class="text-accent font-mono">04.</span><span data-i18n="experience.title">Professional Foundation</span>
             </h2>
 
             <div class="timeline">
                 <div class="timeline-item">
-                    <span class="timeline-date font-mono text-muted" data-i18n="experience.job1_date">Mayıs 2026 -
-                        Temmuz 2026</span>
-                    <h4 class="h5 fw-bold" data-i18n="experience.job1_title">Backend Developer Programı — SoftITo
-                        (İstanbul Ticaret Odası)</h4>
-                    <p class="small text-muted mb-2" data-i18n="experience.job1_location">Online Temel Eğitim + Yüz
-                        Yüze Akademi, Dünya Ticaret Merkezi</p>
-                    <ul class="small text-secondary" data-i18n="experience.job1_list">
-                        <li>Online temel eğitim aşaması ve haftada beş gün yüz yüze akademiden oluşan 320 saatlik tam
-                            zamanlı bir backend geliştirme programını tamamladım.</li>
-                        <li>ADO.NET, EF Core, Dapper, Web API'ler, RBAC ve önbellekleme konularını kapsayan, kademeli
-                            olarak karmaşıklaşan 11 ASP.NET Core uygulaması geliştirdim. Bitirme projemi canlıya alarak
-                            <i>production</i> tecrübemi de pekiştirdim.
-                        </li>
-                        <li>Yardımlaşarak birlikte öğrendiğimiz sınıf ortamında SOLID prensiplerini ve katmanlı mimari
-                            ilkelerini uyguladım.</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-item">
-                    <span class="timeline-date font-mono text-muted" data-i18n="experience.job2_date">Ağustos 2025 -
-                        Günümüz</span>
-                    <h4 class="h5 fw-bold" data-i18n="experience.job2_title">Junior Yazılım Mühendisi (Backend / Full
-                        Stack)
-                    </h4>
-                    <p class="small text-muted mb-2" data-i18n="experience.job2_location">Portföy Geliştirme</p>
-                    <ul class="small text-secondary" data-i18n="experience.job2_list">
-                        <li>Örgün eğitimden bağımsız olarak güvenli ve ölçeklenebilir .NET backend sistemleri
-                            tasarlıyor, yaygın zafiyetleri önlemek için savunmacı programlama prensiplerini uyguluyorum.
-                        </li>
-                        <li>N-Katmanlı mimari ve Entity Framework Core ile kurumsal veri erişim katmanları geliştirme.
-                        </li>
-                        <li>OWASP standartlarında zafiyet koruması entegrasyonu ve güvenlik uygulamaları.</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-item">
-                    <span class="timeline-date font-mono text-muted" data-i18n="experience.job3_date">Ağustos 2019 -
-                        Kasım 2025</span>
-                    <h4 class="h5 fw-bold" data-i18n="experience.job3_title">QA Specialist & Technical Linguist
-                    </h4>
-                    <p class="small text-muted mb-2" data-i18n="experience.job3_location">Netflix, Apple, AWS,
-                        Google,Kaspersky
+                    <span class="timeline-date font-mono text-muted" data-i18n="experience.cyberdistro_date">Oct 2026 - Present</span>
+                    <h4 class="h5 fw-bold" data-i18n="experience.cyberdistro_title">Solutions Engineer (Part-Time) — CyberDistro</h4>
+                    <p class="small text-muted mb-2" data-i18n="experience.cyberdistro_location">
+                        Cybersecurity Distributor · Application Security & Threat Modeling
                     </p>
-                    <ul class="small text-secondary" data-i18n="experience.job3_list">
-                        <li>Netflix ve Apple yazılım arayüzleri için In-Context Review (ICR) ve Kalite Güvence (QA)
-                            süreçlerinin yönetimi.</li>
-                        <li>Amazon Web Services (AWS) başta olmak üzere bulut mimarisi ve siber güvenlik yazılımları
-                            için teknik terim bütünlüğünün sağlanması.</li>
-                        <li>"<i>Netflix Studio Localization Style Guide</i>"ın oluşturulması ve süreç iyileştirmeleri
-                            (Six Sigma).</li>
-                        <li>Shopify Turkish Language Owner rolü kapsamında çeviri bellekleri (TM) ile terminoloji veri
-                            tabanlarının yönetim ve bakımı.</li>
+                    <ul class="small text-secondary" data-i18n="experience.cyberdistro_list">
+                        <li>Specializing in application security and threat modeling, and translating
+                            security concepts for technical and non-technical audiences.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date font-mono text-muted" data-i18n="experience.epam_date">Sep 2026 - Present</span>
+                    <h4 class="h5 fw-bold" data-i18n="experience.epam_title">.NET Fundamentals Trainee — EPAM Systems
+                    </h4>
+                    <p class="small text-muted mb-2" data-i18n="experience.epam_location">Instructor-Led Program · Remote (Türkiye)</p>
+                    <ul class="small text-secondary" data-i18n="experience.epam_list">
+                        <li>Instructor-led .NET Fundamentals program with live workshops and mentor
+                            feedback.</li>
+                        <li>Covering unit testing and mocking (NUnit, xUnit), asynchronous programming,
+                            ADO.NET and EF Core, and ASP.NET Web API/MVC.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date font-mono text-muted" data-i18n="experience.softito_date">May 2026 - Jul 2026</span>
+                    <h4 class="h5 fw-bold" data-i18n="experience.softito_title">
+                        Backend Development Trainee — SoftITo (Istanbul Chamber of Commerce)
+                    </h4>
+                    <p class="small text-muted mb-2" data-i18n="experience.softito_location">
+                        Online Foundation + In-Person Academy, World Trade Center Istanbul
+                    </p>
+                    <ul class="small text-secondary" data-i18n="experience.softito_list">
+                        <li>Completed a full-time, 320-hour backend engineering program spanning an online
+                            foundation phase and an in-person academy, five days a week.</li>
+                        <li>Built 11 progressively complex ASP.NET Core applications covering ADO.NET, EF
+                            Core, Dapper, Web APIs, RBAC, and caching, culminating in EKOMART, a capstone
+                            e-commerce platform deployed to production.</li>
+                        <li>Practiced SOLID principles and layered architecture habits in a collaborative
+                            studio environment.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date font-mono text-muted" data-i18n="experience.break_date">Nov 2025 - Apr 2026</span>
+                    <h4 class="h5 fw-bold" data-i18n="experience.break_title">Career Break: Professional Development</h4>
+                    <p class="small text-muted mb-2" data-i18n="experience.break_location">Full-Time Career Transition</p>
+                    <ul class="small text-secondary" data-i18n="experience.break_list">
+                        <li>Full-time transition from localization QA into backend engineering: completed
+                            Harvard's CS50x, began building a .NET portfolio, and studied secure coding
+                            (OWASP) and software architecture ahead of the SoftITo program.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date font-mono text-muted" data-i18n="experience.qa_date">August 2019 - November 2025</span>
+                    <h4 class="h5 fw-bold" data-i18n="experience.qa_title">QA Specialist & Technical Linguist
+                    </h4>
+                    <p class="small text-muted mb-2" data-i18n="experience.qa_location">
+                        Localization QA for Clients Including Netflix, Apple, AWS, Google, and Kaspersky
+                    </p>
+                    <ul class="small text-secondary" data-i18n="experience.qa_list">
+                        <li>Managed In-Context Review (ICR) and Quality Assurance (QA) processes for Netflix
+                            and Apple software interfaces.</li>
+                        <li>Ensured technical terminology consistency for cloud architecture and
+                            cybersecurity software, primarily for Amazon Web Services (AWS).</li>
+                        <li>Authored the "<i>Netflix Studio Localization Style Guide</i>" and implemented
+                            process optimizations (Lean Six Sigma).</li>
+                        <li>Served as Turkish Language Owner for Shopify, managing Translation Memories and
+                            terminology databases across pipelines.</li>
                     </ul>
                 </div>
             </div>
@@ -391,23 +436,22 @@
     </section>
 
 
-    <section id="contact" class="py-5 bg-light-custom" style="padding-top: 6rem; padding-bottom: 6rem;">
+    <section id="contact" class="py-5 bg-light-custom">
         <div class="container">
             <h2 class="section-title mb-5">
-                <span class="text-accent font-mono">05.</span><span data-i18n="contact.title">Sırada Ne Var?</span>
+                <span class="text-accent font-mono">05.</span><span data-i18n="contact.title">What's Next?</span>
             </h2>
 
             <div class="mw-600 mx-auto text-center">
-                <h3 class="display-5 fw-bold mb-4" data-i18n="contact.main_heading">Birlikte Geliştirelim</h3>
+                <h3 class="display-5 fw-bold mb-4" data-i18n="contact.main_heading">Let's Build Together</h3>
                 <p class="text-muted mb-5" data-i18n="contact.text">
-                    Şu anda Backend, .NET Geliştirici ve C# Geliştirici pozisyonlarına açığım. Özellikle Fintech ve
-                    E-commerce alanlarıyla ilgileniyorum. Takımınıza kalite, güvenlik ve mimari konusundaki çok boyutlu
-                    bakış açımı katmaya hazırım.
+                    I'm open to backend (.NET), AI-integration, and solutions engineering roles, with a
+                    particular interest in teams where security matters. If you're building systems that
+                    need to be reliable, measurable, and hard to break, I'd love to talk.
                 </p>
 
-                <a href="mailto:nejlanurguney@gmail.com" class="btn btn-custom-primary btn-lg font-mono"
-                    data-i18n="contact.btn_email">E-posta
-                    Gönder</a>
+                <a href="mailto:nejla@nej.dev" class="btn btn-custom-primary btn-lg font-mono"
+                    data-i18n="contact.btn_email">Send an Email</a>
 
                 <div class="mt-5 d-flex justify-content-center gap-4">
                     <a href="https://www.linkedin.com/in/nejla-nur-yasar/" target="_blank" rel="noopener noreferrer"
@@ -421,8 +465,7 @@
 
     <footer class="site-footer">
         <div class="footer-content">
-            <span>© <span id="current-year">2026</span> <span data-i18n="footer.rights">All rights
-                    reserved.</span></span>
+            <span>© <span id="current-year">2026</span> <span data-i18n="footer.rights">All rights reserved.</span></span>
             <span class="footer-separator">|</span>
             <a href="/arcade/index.html" target="_blank" rel="noopener noreferrer" class="unicorn-btn"
                 title="Discover the LearnLAB">
@@ -432,7 +475,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="assets/js/i18n.js?v=2"></script>
+    <script src="assets/js/main.js?v=2"></script>
 
 </body>
 

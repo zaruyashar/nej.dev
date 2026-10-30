@@ -1,0 +1,325 @@
+/* design tokens | pseudo-class | "root" has higher specificity than "html" */
+/* add color, sppacing, radius & transition here */
+:root {
+    --bg-color: #ffffff;
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --accent-color: #2563eb;
+    --font-sans: "Inter", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+}
+
+.text-muted {
+    color: var(--text-secondary) !important;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* typography overrides */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+/* fluid font sizes */
+.display-1 {
+    /* auto-scale for screen size or zoom */
+    font-size: clamp(2.5rem, 5vw + 1rem, 5rem) !important;
+    /* override bootstrap */
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: clamp(1rem, 1.5vw, 1.25rem) !important;
+}
+
+.font-mono {
+    font-family: var(--font-mono);
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.text-secondary-custom {
+    color: var(--text-secondary);
+}
+
+.blur-nav {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+    color: var(--text-primary) !important;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+
+.mw-600 {
+    max-width: 600px;
+}
+
+.btn-custom-primary,
+.btn-custom-dark {
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 1px solid;
+}
+
+.btn-custom-primary {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    background-color: transparent;
+}
+
+.btn-custom-primary:hover {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--accent-color);
+}
+
+.btn-custom-dark {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+    background-color: transparent;
+}
+
+.btn-custom-dark:hover {
+    background-color: var(--text-primary);
+    color: #ffffff;
+}
+
+/* cards & sections */
+.bg-light-custom {
+    background-color: #f9fafb;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+}
+
+/* numbered section headers after the title nej.dev() */
+.section-title::after {
+    content: "";
+    display: block;
+    flex-grow: 1;
+    max-width: 200px;
+    height: 1px;
+    background: #e5e7eb;
+    margin-left: 20px;
+}
+
+/* tech badges */
+.badge-custom {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    background: rgba(37, 99, 235, 0.05);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* project cards */
+.project-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #f3f4f6;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* featured (flagship) project card */
+.project-card--featured {
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    border-left: 4px solid var(--accent-color);
+}
+
+.project-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.timeline {
+    border-left: 2px solid #e5e7eb;
+    padding-left: 2rem;
+    margin-left: 1rem;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -2.4rem;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+
+/* overall rem use for accessibility - no hardcoding with px
+- browser default: 1rem = 16px */
+
+
+/* Feature update: Language switcher & en-US localization in addition to tr-TR */
+.lang-switch {
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.lang-btn {
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.lang-btn:hover {
+    color: var(--accent-color) !important;
+    background-color: rgba(37, 99, 235, 0.05);
+}
+
+.lang-btn.active {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--accent-color) !important;
+    font-weight: 700;
+}
+
+.lang-btn.inactive {
+    opacity: 0.6;
+    color: #9ca3af;
+    font-weight: 400;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.unicorn-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border: 1px solid #ddd;
+}
+
+.unicorn-btn:hover {
+    transform: scale(1.1);
+    background-color: #e0c3fc;
+}
+
+
+/* mobile QA updates */
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+h1,
+.display-1 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.25rem;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+    background-size: 100% 100%;
+}
+
+/* watermark */
+.hero-bg-code {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    z-index: -1;
+    color: #656568;
+    line-height: 1.8;
+
+    opacity: 0.3;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 991.98px) {
+    .hero-bg-code {
+        opacity: 0.3;
+        font-size: 0.5rem;
+    }
+}
+
+/* hero header */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 140px !important;
+    padding-bottom: 60px !important;
+}
+
+@media (max-width: 1025px) {
+    .hero-section {
+        min-height: auto;
+        padding-top: 130px !important;
+        padding-bottom: 40px !important;
+    }
+}
